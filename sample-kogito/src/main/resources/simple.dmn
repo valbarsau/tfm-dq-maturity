@@ -77,17 +77,17 @@
         </dmn:inputExpression>
       </dmn:input>
       <dmn:input id="_FEF81E12-97E2-4B23-B20E-A776AACCE344">
-        <dmn:inputExpression typeRef="number">
+        <dmn:inputExpression id="_36F10A5F-40BF-4A93-B159-A85090726266" typeRef="number">
           <dmn:text>DateAccuracyAux.Year</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
       <dmn:input id="_C9185A1E-C1B7-4558-B62C-84E8E62DEA0B">
-        <dmn:inputExpression typeRef="number">
+        <dmn:inputExpression id="_9A7566C7-8BD3-47BD-982A-2E9075B3CF3F" typeRef="number">
           <dmn:text>DateAccuracyAux.Month</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
       <dmn:input id="_F1931D20-ABF5-41A0-A03E-717BD6D0B980">
-        <dmn:inputExpression typeRef="number">
+        <dmn:inputExpression id="_43400107-AEAF-43F9-A4B8-02F8DB03F3CF" typeRef="number">
           <dmn:text>DateAccuracyAux.Day</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
