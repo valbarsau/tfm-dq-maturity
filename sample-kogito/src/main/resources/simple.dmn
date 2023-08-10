@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dmn:definitions xmlns:dmn="http://www.omg.org/spec/DMN/20180521/MODEL/" xmlns="https://kiegroup.org/dmn/_EE9D9317-FA5A-45F5-90C0-B846CCF2ED25" xmlns:feel="http://www.omg.org/spec/DMN/20180521/FEEL/" xmlns:kie="http://www.drools.org/kie/dmn/1.2" xmlns:dmndi="http://www.omg.org/spec/DMN/20180521/DMNDI/" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" id="_D4EC6659-B853-448A-9BDC-CCBB1EC09326" name="simple" typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" namespace="https://kiegroup.org/dmn/_EE9D9317-FA5A-45F5-90C0-B846CCF2ED25">
   <dmn:extensionElements/>
-  <dmn:inputData id="_3ECB4F92-9C77-4953-A0E7-CE3A0D55CEF0" name="Date">
+  <dmn:inputData id="_3ECB4F92-9C77-4953-A0E7-CE3A0D55CEF0" name="Date EX">
     <dmn:extensionElements/>
-    <dmn:variable id="_BA5CFC13-EFDD-436F-8FF2-E3844F5A6828" name="Date" typeRef="string"/>
+    <dmn:variable id="_BA5CFC13-EFDD-436F-8FF2-E3844F5A6828" name="Date EX" typeRef="string"/>
   </dmn:inputData>
   <dmn:decision id="_525CF362-23DD-4063-B0CB-AB3A432FE17F" name="DateAccuracyAux">
     <dmn:extensionElements/>
@@ -14,7 +14,7 @@
     <dmn:decisionTable id="_98521038-157C-45B5-8CC4-E59D22F2C930" hitPolicy="FIRST" preferredOrientation="Rule-as-Row">
       <dmn:input id="_5A66EA36-9AE6-4DD7-8ED2-B52BD11C5B4D">
         <dmn:inputExpression id="_397A67FE-928B-4748-A195-6CB13F17FBB6" typeRef="string">
-          <dmn:text>Date</dmn:text>
+          <dmn:text>Date EX</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
       <dmn:output id="_CEC0F04A-639B-4414-AB1B-C6AEA49FAC40" name="AccomplishedPattern" typeRef="boolean"/>
@@ -30,13 +30,13 @@
           <dmn:text>true</dmn:text>
         </dmn:outputEntry>
         <dmn:outputEntry id="_E9170892-EB67-4956-8820-27C54C36F4A3">
-          <dmn:text>number(split(Date,"/")[3],",",".")</dmn:text>
+          <dmn:text>number(split(Date EX,"/")[3],",",".")</dmn:text>
         </dmn:outputEntry>
         <dmn:outputEntry id="_10792493-D2D2-49AB-8F95-D29C0BEF132B">
-          <dmn:text>number(split(Date,"/")[1],",",".")</dmn:text>
+          <dmn:text>number(split(Date EX,"/")[1],",",".")</dmn:text>
         </dmn:outputEntry>
         <dmn:outputEntry id="_DA85B686-8D6B-45DE-B62C-DE0A46E14B10">
-          <dmn:text>number(split(Date,"/")[2],",",".")</dmn:text>
+          <dmn:text>number(split(Date EX,"/")[2],",",".")</dmn:text>
         </dmn:outputEntry>
         <dmn:annotationEntry>
           <dmn:text/>
@@ -64,177 +64,6 @@
       </dmn:rule>
     </dmn:decisionTable>
   </dmn:decision>
-  <dmn:decision id="_0FAD6470-6E7E-4148-B137-B399C038B319" name="DateAccuracy">
-    <dmn:extensionElements/>
-    <dmn:variable id="_6A93C914-0000-4F0E-BE7B-8C21E6E646E0" name="DateAccuracy" typeRef="string"/>
-    <dmn:informationRequirement id="_B7FA502D-9EC2-411E-8216-564629B6BD1A">
-      <dmn:requiredDecision href="#_525CF362-23DD-4063-B0CB-AB3A432FE17F"/>
-    </dmn:informationRequirement>
-    <dmn:decisionTable id="_1DE67867-18C3-45FF-9A60-F514DAE9C2F3" hitPolicy="FIRST" preferredOrientation="Rule-as-Row">
-      <dmn:input id="_E242E70E-C8F9-47A5-B9C5-9A2F0816AAE9">
-        <dmn:inputExpression id="_DA90EF46-3EFB-4B36-AB80-6AD2E2B9B7E6" typeRef="boolean">
-          <dmn:text>DateAccuracyAux.AccomplishedPattern</dmn:text>
-        </dmn:inputExpression>
-      </dmn:input>
-      <dmn:input id="_FEF81E12-97E2-4B23-B20E-A776AACCE344">
-        <dmn:inputExpression id="_36F10A5F-40BF-4A93-B159-A85090726266" typeRef="number">
-          <dmn:text>DateAccuracyAux.Year</dmn:text>
-        </dmn:inputExpression>
-      </dmn:input>
-      <dmn:input id="_C9185A1E-C1B7-4558-B62C-84E8E62DEA0B">
-        <dmn:inputExpression id="_9A7566C7-8BD3-47BD-982A-2E9075B3CF3F" typeRef="number">
-          <dmn:text>DateAccuracyAux.Month</dmn:text>
-        </dmn:inputExpression>
-      </dmn:input>
-      <dmn:input id="_F1931D20-ABF5-41A0-A03E-717BD6D0B980">
-        <dmn:inputExpression id="_43400107-AEAF-43F9-A4B8-02F8DB03F3CF" typeRef="number">
-          <dmn:text>DateAccuracyAux.Day</dmn:text>
-        </dmn:inputExpression>
-      </dmn:input>
-      <dmn:output id="_2D8B4A4D-DA0D-4577-BE0D-2A2BB76D6411"/>
-      <dmn:annotation name="annotation-1"/>
-      <dmn:rule id="_A61073BD-BEA5-4526-BDAF-4BF6D34A7333">
-        <dmn:inputEntry id="_3EF2555C-4212-4871-A790-1907EF920BFB">
-          <dmn:text>true</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_29939273-992A-4C08-9BC6-9E9770127748">
-          <dmn:text>&gt;=2020</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_C7D18CA7-E4FE-43C5-9D21-DDB5B524D6A4">
-          <dmn:text>list contains([1, 3, 5, 7, 8, 10, 12], ?)</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_DA754DB8-802E-46A3-A02D-B61B44E2A571">
-          <dmn:text>&lt;=31</dmn:text>
-        </dmn:inputEntry>
-        <dmn:outputEntry id="_763A546B-6F9A-45BE-85F7-E53B5ED2E8A1">
-          <dmn:text>"Real Date"</dmn:text>
-        </dmn:outputEntry>
-        <dmn:annotationEntry>
-          <dmn:text/>
-        </dmn:annotationEntry>
-      </dmn:rule>
-      <dmn:rule id="_CBE85B8E-A0B0-47E3-8DFB-3DFAC7F13A1B">
-        <dmn:inputEntry id="_357D79C4-72CC-47C0-93FF-AF1F556359A7">
-          <dmn:text>true</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_F9B8D038-3938-4568-8038-937D3D045F2B">
-          <dmn:text>&gt;=2020</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_1752F06F-DEA7-45DD-AFF8-37AD54D72315">
-          <dmn:text>list contains([4, 6, 9, 11], ?)</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_781F9FE3-9669-4006-8444-19D8F00249CE">
-          <dmn:text>&lt;=30</dmn:text>
-        </dmn:inputEntry>
-        <dmn:outputEntry id="_A1C8C8F9-C1F5-42CE-8A7C-854CB6C075AC">
-          <dmn:text>"Real Date"</dmn:text>
-        </dmn:outputEntry>
-        <dmn:annotationEntry>
-          <dmn:text/>
-        </dmn:annotationEntry>
-      </dmn:rule>
-      <dmn:rule id="_646D38DD-AB21-41F9-B8CD-9B7F5B6D8554">
-        <dmn:inputEntry id="_A15DD765-5764-4AE0-B5C2-7049AACFB66D">
-          <dmn:text>true</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_DB4DE0F6-5438-4A35-ABFF-FA9D358E777A">
-          <dmn:text>if (? &gt;= 2020) then modulo(?, 4) = 0 else false</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_F0725B91-FF5C-4C4A-92A0-BF7105C5FC67">
-          <dmn:text>2</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_D9AAB736-8AF0-4C99-98A0-E5B87610614E">
-          <dmn:text>&lt;=29</dmn:text>
-        </dmn:inputEntry>
-        <dmn:outputEntry id="_0AB0E399-C0B0-400C-A4B3-BE89EE12A22B">
-          <dmn:text>"Real Date"</dmn:text>
-        </dmn:outputEntry>
-        <dmn:annotationEntry>
-          <dmn:text/>
-        </dmn:annotationEntry>
-      </dmn:rule>
-      <dmn:rule id="_FA4E36C0-8A42-402E-A315-CBD149DD0847">
-        <dmn:inputEntry id="_9A3B1A91-DE29-40A4-A129-245E4F4FE77E">
-          <dmn:text>true</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_91F5FE5A-77BE-456F-B90D-7DEDC061FCA6">
-          <dmn:text>if (? &gt;= 2020) then modulo(?, 4) != 0 else false</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_F2FD5204-6467-4C42-BCAF-552B8732090B">
-          <dmn:text>2</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_75406F9D-8D0F-48D0-9DDD-3400FA0C2A85">
-          <dmn:text>&lt;=28</dmn:text>
-        </dmn:inputEntry>
-        <dmn:outputEntry id="_C54629FD-93DE-45BD-93F7-21B16C9CC010">
-          <dmn:text>"Real Date"</dmn:text>
-        </dmn:outputEntry>
-        <dmn:annotationEntry>
-          <dmn:text/>
-        </dmn:annotationEntry>
-      </dmn:rule>
-      <dmn:rule id="_1337690D-0FFB-404D-95FA-04431477744A">
-        <dmn:inputEntry id="_599ED006-DEC7-4BD9-94C7-BEAF3E7EA785">
-          <dmn:text>true</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_12094884-DFFF-4D04-A3E8-FF9A17BB40DB">
-          <dmn:text>&lt;=2020</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_CD52766D-27F9-41BD-8E41-D13D449D429E">
-          <dmn:text>-</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_7D19452A-C22E-4372-9FED-EFF2F59B1EC0">
-          <dmn:text>-</dmn:text>
-        </dmn:inputEntry>
-        <dmn:outputEntry id="_C2E780F2-F6FC-45F0-B9A9-8EBAC7B35BE0">
-          <dmn:text>"Accomplished format, but not a real date since covid-19 started in January 2020"</dmn:text>
-        </dmn:outputEntry>
-        <dmn:annotationEntry>
-          <dmn:text/>
-        </dmn:annotationEntry>
-      </dmn:rule>
-      <dmn:rule id="_FFF1283D-0E9E-4BF3-ACB6-809A69FE5BF6">
-        <dmn:inputEntry id="_65CFC740-5AE4-46D8-83A7-4A39C60EC1F8">
-          <dmn:text>true</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_79AEB0D8-0705-4B54-948A-BDFC41943177">
-          <dmn:text>-</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_96B92E47-49F7-48A8-BA8D-53074AF30339">
-          <dmn:text>-</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_4EB4524A-2487-48F0-A34A-20E85C40ABD0">
-          <dmn:text>-</dmn:text>
-        </dmn:inputEntry>
-        <dmn:outputEntry id="_7661676A-BDFF-4110-9406-67B73EC1A6FD">
-          <dmn:text>"Accomplished format, but not an accurate date because relations among year, month and day aren't actual"</dmn:text>
-        </dmn:outputEntry>
-        <dmn:annotationEntry>
-          <dmn:text/>
-        </dmn:annotationEntry>
-      </dmn:rule>
-      <dmn:rule id="_9708BC6C-940E-4AC3-97FA-4F9B8E964701">
-        <dmn:inputEntry id="_1D6EB574-C094-414F-A657-FEF18E362AE3">
-          <dmn:text>-</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_7EAE7E4C-8F0F-4A90-8F81-E443E427C5A3">
-          <dmn:text>-</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_95D8E65C-4826-4E1F-897C-BC55837DD486">
-          <dmn:text>-</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_D26B3047-2A08-4610-ABED-B08C481A303C">
-          <dmn:text>-</dmn:text>
-        </dmn:inputEntry>
-        <dmn:outputEntry id="_B7B7D219-A83F-4822-8149-C362AFF91383">
-          <dmn:text>"Fake date"</dmn:text>
-        </dmn:outputEntry>
-        <dmn:annotationEntry>
-          <dmn:text/>
-        </dmn:annotationEntry>
-      </dmn:rule>
-    </dmn:decisionTable>
-  </dmn:decision>
   <dmndi:DMNDI>
     <dmndi:DMNDiagram id="_2D37E76B-7878-4EA4-87A1-FCE917081639" name="DRG">
       <di:extension>
@@ -246,15 +75,6 @@
             <kie:width>295</kie:width>
             <kie:width>311</kie:width>
             <kie:width>268</kie:width>
-            <kie:width>100</kie:width>
-          </kie:ComponentWidths>
-          <kie:ComponentWidths dmnElementRef="_1DE67867-18C3-45FF-9A60-F514DAE9C2F3">
-            <kie:width>50</kie:width>
-            <kie:width>272</kie:width>
-            <kie:width>412</kie:width>
-            <kie:width>357</kie:width>
-            <kie:width>170</kie:width>
-            <kie:width>399</kie:width>
             <kie:width>100</kie:width>
           </kie:ComponentWidths>
         </kie:ComponentsWidthsExtension>
@@ -274,25 +94,12 @@
           <dmndi:StrokeColor red="0" green="0" blue="0"/>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
-        <dc:Bounds x="423" y="133" width="189" height="50"/>
-        <dmndi:DMNLabel/>
-      </dmndi:DMNShape>
-      <dmndi:DMNShape id="dmnshape-drg-_0FAD6470-6E7E-4148-B137-B399C038B319" dmnElementRef="_0FAD6470-6E7E-4148-B137-B399C038B319" isCollapsed="false">
-        <dmndi:DMNStyle>
-          <dmndi:FillColor red="255" green="255" blue="255"/>
-          <dmndi:StrokeColor red="0" green="0" blue="0"/>
-          <dmndi:FontColor red="0" green="0" blue="0"/>
-        </dmndi:DMNStyle>
-        <dc:Bounds x="779" y="133" width="100" height="50"/>
+        <dc:Bounds x="423" y="123" width="189" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNEdge id="dmnedge-drg-_7C420DC7-78E3-4AD3-9042-DC44B761373C" dmnElementRef="_7C420DC7-78E3-4AD3-9042-DC44B761373C">
         <di:waypoint x="244" y="157"/>
-        <di:waypoint x="423" y="158"/>
-      </dmndi:DMNEdge>
-      <dmndi:DMNEdge id="dmnedge-drg-_B7FA502D-9EC2-411E-8216-564629B6BD1A-AUTO-TARGET" dmnElementRef="_B7FA502D-9EC2-411E-8216-564629B6BD1A">
-        <di:waypoint x="517.5" y="158"/>
-        <di:waypoint x="779" y="158"/>
+        <di:waypoint x="423" y="148"/>
       </dmndi:DMNEdge>
     </dmndi:DMNDiagram>
   </dmndi:DMNDI>
