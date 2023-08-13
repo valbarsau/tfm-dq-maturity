@@ -230,7 +230,7 @@
       <dmn:annotation name="annotation-1"/>
       <dmn:rule id="_1699DDEB-3058-44CE-B1F7-7298119E8F5B">
         <dmn:inputEntry id="_6D16FEA2-9E2A-4BFB-BD0E-2B70605F877D">
-          <dmn:text>&gt;=7</dmn:text>
+          <dmn:text>&gt;=3</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_F84365B0-9E52-4227-8E40-C94C27CE8E25">
           <dmn:text>"To be used"</dmn:text>
@@ -4731,7 +4731,7 @@
         </dmn:inputExpression>
       </dmn:input>
       <dmn:output id="_CB937AF2-D2CA-4A7E-823A-74DF18CDA4F4" name="ComparisonResult" typeRef="string"/>
-      <dmn:output id="_5649FB44-3D06-45CC-A9DF-3180BA7CE89C" name="Calculation" typeRef="number"/>
+      <dmn:output id="_5649FB44-3D06-45CC-A9DF-3180BA7CE89C" name="Calculation" typeRef="string"/>
       <dmn:annotation name="annotation-1"/>
       <dmn:rule id="_F181C4F6-2776-497A-BAF6-E754F04A1963">
         <dmn:inputEntry id="_FA0C7520-FC16-438E-9639-FC4CDD4D5131">
@@ -4747,7 +4747,7 @@
           <dmn:text>if (round half up(number(Population, ",", ".") / number(Area km2, ",", "."), 2) = number(Population Density, ",", ".")) then "Result matched with 2 decimal places" else if (round half up(number(Population, ",", ".") / number(Area km2, ",", "."), 1) = number(Population Density, ",", ".")) then "Result matched with 1 decimal place" else "Result didn't match"</dmn:text>
         </dmn:outputEntry>
         <dmn:outputEntry id="_2CBB6767-0E94-4BAF-B901-482D19FBA068">
-          <dmn:text>number(Population, ",", ".") / number(Area km2, ",", ".")</dmn:text>
+          <dmn:text>string(number(Population, ",", ".") / number(Area km2, ",", "."))</dmn:text>
         </dmn:outputEntry>
         <dmn:annotationEntry>
           <dmn:text/>
@@ -4767,7 +4767,7 @@
           <dmn:text>"Consistence couldn't be checked due to some input data doesn't fulfill number format or is null"</dmn:text>
         </dmn:outputEntry>
         <dmn:outputEntry id="_753CF8DA-9311-4660-94AB-CFE2139E6E29">
-          <dmn:text>-1</dmn:text>
+          <dmn:text>"-1"</dmn:text>
         </dmn:outputEntry>
         <dmn:annotationEntry>
           <dmn:text/>
@@ -4804,7 +4804,7 @@
         </dmn:inputExpression>
       </dmn:input>
       <dmn:output id="_9E7EEB29-AAFF-4132-93D4-E049C18797B6" name="ComparisonResult" typeRef="string"/>
-      <dmn:output id="_B34C2D6F-02FC-4FB0-9D94-D9BD2E861686" name="Calculation" typeRef="number"/>
+      <dmn:output id="_B34C2D6F-02FC-4FB0-9D94-D9BD2E861686" name="Calculation" typeRef="string"/>
       <dmn:annotation name="annotation-1"/>
       <dmn:rule id="_CEFBCD13-8681-47D3-9414-FF430341AC25">
         <dmn:inputEntry id="_44ADD7F5-3196-4E70-BF7D-8CE31E05A0A4">
@@ -4820,7 +4820,7 @@
           <dmn:text>if (round half up(1000000 * number(New Cases, ",", ".") / number(Population, ",", "."), 2) = number(New Cases per Million, ",", ".")) then "Result matched with 2 decimal places" else if (round half up(1000000 * number(New Cases, ",", ".") / number(Population, ",", "."), 1) = number(New Cases per Million, ",", ".")) then "Result matched with 1 decimal place" else "Result didn't match"</dmn:text>
         </dmn:outputEntry>
         <dmn:outputEntry id="_01D9DCBB-68DF-4CAE-8267-501C0D33D151">
-          <dmn:text>1000000 * number(New Cases, ",", ".") / number(Population, ",", ".")</dmn:text>
+          <dmn:text>string(1000000 * number(New Cases, ",", ".") / number(Population, ",", "."))</dmn:text>
         </dmn:outputEntry>
         <dmn:annotationEntry>
           <dmn:text/>
@@ -4840,7 +4840,7 @@
           <dmn:text>"Consistence couldn't be checked due to some input data doesn't fulfill number format or is null"</dmn:text>
         </dmn:outputEntry>
         <dmn:outputEntry id="_49F51451-3DC9-41E4-BCD4-AB9AB134FB2A">
-          <dmn:text>-1</dmn:text>
+          <dmn:text>"-1"</dmn:text>
         </dmn:outputEntry>
         <dmn:annotationEntry>
           <dmn:text/>
@@ -4877,7 +4877,7 @@
         </dmn:inputExpression>
       </dmn:input>
       <dmn:output id="_EF4463A6-7843-462D-B011-E41D1F95F449" name="ComparisonResult" typeRef="string"/>
-      <dmn:output id="_1A3C0006-E6D0-4600-A608-78A8E0F206B1" name="Calculation" typeRef="number"/>
+      <dmn:output id="_1A3C0006-E6D0-4600-A608-78A8E0F206B1" name="Calculation" typeRef="string"/>
       <dmn:annotation name="annotation-1"/>
       <dmn:rule id="_26E4D907-21F7-4D3C-8252-406B427666EF">
         <dmn:inputEntry id="_846D0817-98EF-4F73-93A2-73DD0F83F33F">
@@ -4893,7 +4893,7 @@
           <dmn:text>if (round half up(1000000 * number(Total Cases, ",", ".") / number(Population, ",", "."), 2) = number(Total Cases per Million, ",", ".")) then "Result matched with 2 decimal places" else if (round half up(1000000 * number(Total Cases, ",", ".") / number(Population, ",", "."), 1) = number(Total Cases per Million, ",", ".")) then "Result matched with 1 decimal place" else "Result didn't match"</dmn:text>
         </dmn:outputEntry>
         <dmn:outputEntry id="_22B85FC7-8F02-46E8-BBBE-288D919DEE64">
-          <dmn:text>1000000 * number(Total Cases, ",", ".") / number(Population, ",", ".")</dmn:text>
+          <dmn:text>string(1000000 * number(Total Cases, ",", ".") / number(Population, ",", "."))</dmn:text>
         </dmn:outputEntry>
         <dmn:annotationEntry>
           <dmn:text/>
@@ -4913,7 +4913,7 @@
           <dmn:text>"Consistence couldn't be checked due to some input data doesn't fulfill number format or is null"</dmn:text>
         </dmn:outputEntry>
         <dmn:outputEntry id="_425C9039-12A2-46A1-9748-9646EA7B0053">
-          <dmn:text>-1</dmn:text>
+          <dmn:text>"-1"</dmn:text>
         </dmn:outputEntry>
         <dmn:annotationEntry>
           <dmn:text/>
@@ -4950,7 +4950,7 @@
         </dmn:inputExpression>
       </dmn:input>
       <dmn:output id="_824A49CB-2CE7-47D1-975F-40E70625EDEB" name="ComparisonResult" typeRef="string"/>
-      <dmn:output id="_53A312F3-D60F-44A0-987F-3C3814C24BB7" name="Calculation" typeRef="number"/>
+      <dmn:output id="_53A312F3-D60F-44A0-987F-3C3814C24BB7" name="Calculation" typeRef="string"/>
       <dmn:annotation name="annotation-1"/>
       <dmn:rule id="_C2ECC55D-2104-42C1-BD72-F8F3BA5ACCDB">
         <dmn:inputEntry id="_9BD204C6-A50A-4A19-A7DC-2A63ED67EACA">
@@ -4966,7 +4966,7 @@
           <dmn:text>if (round half up(1000000 * number(New Deaths, ",", ".") / number(Population, ",", "."), 2) = number(New Deaths per Million, ",", ".")) then "Result matched with 2 decimal places" else if (round half up(1000000 * number(New Deaths, ",", ".") / number(Population, ",", "."), 1) = number(New Deaths per Million, ",", ".")) then "Result matched with 1 decimal place" else "Result didn't match"</dmn:text>
         </dmn:outputEntry>
         <dmn:outputEntry id="_1AEC0AB9-46C5-42FB-9297-334FA046B432">
-          <dmn:text>1000000 * number(New Deaths, ",", ".") / number(Population, ",", ".")</dmn:text>
+          <dmn:text>string(1000000 * number(New Deaths, ",", ".") / number(Population, ",", "."))</dmn:text>
         </dmn:outputEntry>
         <dmn:annotationEntry>
           <dmn:text/>
@@ -4986,7 +4986,7 @@
           <dmn:text>"Consistence couldn't be checked due to some input data doesn't fulfill number format or is null"</dmn:text>
         </dmn:outputEntry>
         <dmn:outputEntry id="_535099AB-2205-41BB-B167-6C3132BB919A">
-          <dmn:text>-1</dmn:text>
+          <dmn:text>"-1"</dmn:text>
         </dmn:outputEntry>
         <dmn:annotationEntry>
           <dmn:text/>
@@ -5023,7 +5023,7 @@
         </dmn:inputExpression>
       </dmn:input>
       <dmn:output id="_73500B2D-F442-487E-86BA-86C8B62884D8" name="ComparisonResult" typeRef="string"/>
-      <dmn:output id="_AF4DDA14-0AED-4A23-A158-3027AD7A214C" name="Calculation" typeRef="number"/>
+      <dmn:output id="_AF4DDA14-0AED-4A23-A158-3027AD7A214C" name="Calculation" typeRef="string"/>
       <dmn:annotation name="annotation-1"/>
       <dmn:rule id="_1C8607CC-C7EA-4E7B-AEA5-02C744750F06">
         <dmn:inputEntry id="_4B7A3032-86B9-431F-BD54-7EE906EC9719">
@@ -5039,7 +5039,7 @@
           <dmn:text>if (round half up(1000000 * number(Total Deaths, ",", ".") / number(Population, ",", "."), 2) = number(Total Deaths per Million, ",", ".")) then "Result matched with 2 decimal places" else if (round half up(1000000 * number(Total Deaths, ",", ".") / number(Population, ",", "."), 1) = number(Total Deaths per Million, ",", ".")) then "Result matched with 1 decimal place" else "Result didn't match"</dmn:text>
         </dmn:outputEntry>
         <dmn:outputEntry id="_4D539EC4-D815-4C09-8B6F-29F593DBCF31">
-          <dmn:text>1000000 * number(Total Deaths, ",", ".") / number(Population, ",", ".")</dmn:text>
+          <dmn:text>string(1000000 * number(Total Deaths, ",", ".") / number(Population, ",", "."))</dmn:text>
         </dmn:outputEntry>
         <dmn:annotationEntry>
           <dmn:text/>
@@ -5059,7 +5059,7 @@
           <dmn:text>"Consistence couldn't be checked due to some input data doesn't fulfill number format or is null"</dmn:text>
         </dmn:outputEntry>
         <dmn:outputEntry id="_1D86B046-CE27-4302-9A8C-27F2FB60D392">
-          <dmn:text>-1</dmn:text>
+          <dmn:text>"-1"</dmn:text>
         </dmn:outputEntry>
         <dmn:annotationEntry>
           <dmn:text/>
@@ -6037,7 +6037,7 @@
           <kie:ComponentWidths dmnElementRef="_C06F352F-93FB-4F94-931F-344E1A88B8CD">
             <kie:width>50</kie:width>
             <kie:width>282</kie:width>
-            <kie:width>100</kie:width>
+            <kie:width>182</kie:width>
             <kie:width>100</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_20734D93-85BE-4AD7-B9DB-A3FC9BC88327">

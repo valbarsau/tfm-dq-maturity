@@ -3,7 +3,8 @@ RUN apt-get update
 RUN apt-get -y install wget
 RUN apt-get -y install unzip
 RUN apt-get -y install openjdk-17-jdk
-RUN apt-get -y install iproute2
+#RUN apt-get -y install iproute2
+RUN apt-get -y install net-tools
 RUN apt-get -y install curl
 RUN mkdir -p /opt/software/
 RUN mkdir -p /opt/software/data/
@@ -28,6 +29,8 @@ RUN mv nifi.properties nifi_bck.properties
 # externas mas alla de la de localhost
 # En concreto se modifica la propiedad que restringe las interfaces de las cuales pueden provenir peticiones
 RUN sed 's/nifi.web.https.host=127.0.0.1/nifi.web.https.host=0.0.0.0/' nifi_bck.properties > nifi.properties
+
+# Movemos el conector de impala del host local al contenedor
 
 WORKDIR /opt/software/nifi-1.22.0/lib
 COPY ./config/ImpalaJDBC41.jar ImpalaJDBC41.jar

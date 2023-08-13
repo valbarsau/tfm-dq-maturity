@@ -1,7 +1,7 @@
---DROP DATABASE dq_maturity;
+DROP DATABASE dq_maturity;
 CREATE DATABASE dq_maturity;
 
---DROP TABLE DQ_MATURITY.DATASET_COVID_INDONESIA;
+DROP TABLE DQ_MATURITY.DATASET_COVID_INDONESIA;
 CREATE EXTERNAL TABLE DQ_MATURITY.DATASET_COVID_INDONESIA (
     date_ STRING,
     location_iso_code STRING,
@@ -88,15 +88,15 @@ CREATE EXTERNAL TABLE DQ_MATURITY.DATASET_COVID_INDONESIA (
     new_total_recovered_consistency STRING,
     total_cities_districts_consistency STRING,
     total_districts_urban_villages_consistency STRING,
-    population_density_consistency_calculation DOUBLE,
+    population_density_consistency_calculation STRING,
     population_density_consistency_comparison_result STRING,
-    new_cases_per_million_consistency_calculation DOUBLE,
+    new_cases_per_million_consistency_calculation STRING,
     new_cases_per_million_consistency_comparison_result STRING,
-    total_cases_per_million_consistency_calculation DOUBLE,
+    total_cases_per_million_consistency_calculation STRING,
     total_cases_per_million_consistency_comparison_result STRING,
-    new_deaths_per_million_consistency_calculation DOUBLE,
+    new_deaths_per_million_consistency_calculation STRING,
     new_deaths_per_million_consistency_comparison_result STRING,
-    total_deaths_per_million_consistency_calculation DOUBLE,
+    total_deaths_per_million_consistency_calculation STRING,
     total_deaths_per_million_consistency_comparison_result STRING,
     location_iso_code_level_rural_consistency BOOLEAN,
     ir_completeness STRING,
