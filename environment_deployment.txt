@@ -8,7 +8,7 @@ docker run -t -d --net dq-maturity-network --ip 172.18.0.3 -p 8443:8443 --name n
 -- Despliegue de Kogito (abrir consola nueva)
 
 cd sample-kogito
-./mvnw package
+./mvnw clean package
 docker build -f src/main/docker/Dockerfile.jvm -t quarkus/sample-kogito-jvm .
 docker run -t --net dq-maturity-network --ip 172.18.0.4 -p 8080:8080 --name kogito-container quarkus/sample-kogito-jvm
 

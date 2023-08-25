@@ -1,14 +1,62 @@
 DROP DATABASE dq_maturity;
 CREATE DATABASE dq_maturity;
 
-DROP TABLE DQ_MATURITY.DATASET_COVID_INDONESIA;
-CREATE EXTERNAL TABLE DQ_MATURITY.DATASET_COVID_INDONESIA (
+
+
+DROP TABLE DQ_MATURITY.DATASET_COVID_INDONESIA_SOURCE;
+CREATE EXTERNAL TABLE DQ_MATURITY.DATASET_COVID_INDONESIA_SOURCE (
+    date_ STRING,
+    location_iso_code STRING,
+    location STRING,
+    new_cases STRING,
+    new_deaths STRING,
+    new_recovered STRING,
+    new_active_cases STRING,
+    total_cases STRING,
+    total_deaths STRING,
+    total_recovered STRING,
+    total_active_cases STRING,
+    location_level STRING,
+    city_or_regency STRING,
+    province STRING,
+    country STRING,
+    continent STRING,
+    island STRING,
+    time_zone STRING,
+    special_status STRING,
+    total_regencies STRING,
+    total_cities STRING,
+    total_districts STRING,
+    total_urban_villages STRING,
+    total_rural_villages STRING,
+    area_km2 STRING,
+    population STRING,
+    population_density STRING,
+    longitude STRING,
+    latitude STRING,
+    new_cases_per_million STRING,
+    total_cases_per_million STRING,
+    new_deaths_per_million STRING,
+    total_deaths_per_million STRING,
+    total_deaths_per_rb STRING,
+    case_fatality_rate STRING,
+    case_recovered_rate STRING,
+    growth_factor_of_new_cases STRING,
+    growth_factor_of_new_deaths STRING
+)
+ROW FORMAT DELIMITED FIELDS TERMINATED BY ";"
+LOCATION '/user/hive/source'
+TBLPROPERTIES ("auto.purge"="true", "skip.header.line.count"="1");
+
+
+
+DROP TABLE DQ_MATURITY.DATASET_COVID_INDONESIA_DMN;
+CREATE EXTERNAL TABLE DQ_MATURITY.DATASET_COVID_INDONESIA_DMN (
     date_ STRING,
     location_iso_code STRING,
     new_cases STRING,
     new_deaths STRING,
     new_recovered STRING,
-    new_active_cases STRING,
     total_cases STRING,
     total_deaths STRING,
     total_recovered STRING,
@@ -111,5 +159,5 @@ CREATE EXTERNAL TABLE DQ_MATURITY.DATASET_COVID_INDONESIA (
     rur STRING
 )
 STORED AS PARQUET
-LOCATION '/user/hive/output'
+LOCATION '/user/hive/indonesia_covid19'
 TBLPROPERTIES ("auto.purge"="true");
