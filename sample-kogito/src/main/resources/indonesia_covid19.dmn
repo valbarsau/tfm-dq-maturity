@@ -1311,10 +1311,18 @@
     <dmn:informationRequirement id="_E947BE99-7BE5-44EB-93CB-9F851C140A56">
       <dmn:requiredInput href="#_621E7C94-4582-4F3A-9258-451D41EEC623"/>
     </dmn:informationRequirement>
+    <dmn:informationRequirement id="_63F009BC-5712-4528-B8FC-8DC62F2B2D23">
+      <dmn:requiredInput href="#_F1095AC0-0B2E-4D67-8537-648F3BB6AD79"/>
+    </dmn:informationRequirement>
     <dmn:decisionTable id="_2314132D-BD49-4B6F-AEA9-9473016A1713" hitPolicy="FIRST" preferredOrientation="Rule-as-Row">
       <dmn:input id="_4927540A-0341-4A48-B714-6A19A14D9071">
         <dmn:inputExpression id="_3FC88C23-8376-41FC-8F2E-85E6D00DEC48" typeRef="string">
           <dmn:text>Total Cities</dmn:text>
+        </dmn:inputExpression>
+      </dmn:input>
+      <dmn:input id="_5A80D6CC-29CC-4950-9B6F-2473DF1AAAB3">
+        <dmn:inputExpression typeRef="string">
+          <dmn:text>Location ISO Code</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
       <dmn:output id="_6B5012BF-D219-45BB-9BB9-D8506A1191D1"/>
@@ -1323,7 +1331,24 @@
         <dmn:inputEntry id="_5FCDFACA-B74A-472D-B881-EA01315B6B17">
           <dmn:text>null</dmn:text>
         </dmn:inputEntry>
+        <dmn:inputEntry id="_AB84B0C0-EF19-4758-9CDB-F9BA813DD8A2">
+          <dmn:text>"ID-SR"</dmn:text>
+        </dmn:inputEntry>
         <dmn:outputEntry id="_72FF56D4-A387-4153-936A-F7EA33563B6C">
+          <dmn:text>true</dmn:text>
+        </dmn:outputEntry>
+        <dmn:annotationEntry>
+          <dmn:text/>
+        </dmn:annotationEntry>
+      </dmn:rule>
+      <dmn:rule id="_52AF894E-BB7E-4270-9956-95C668A68265">
+        <dmn:inputEntry id="_37C244B3-D09E-4768-9CBE-BE264278B76B">
+          <dmn:text>null</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_A9B928EE-FABB-430E-B70C-947781F8C03C">
+          <dmn:text>-</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_FC730B96-BBB8-43FA-BD65-02D70AB46FAA">
           <dmn:text>false</dmn:text>
         </dmn:outputEntry>
         <dmn:annotationEntry>
@@ -1332,6 +1357,9 @@
       </dmn:rule>
       <dmn:rule id="_D922E5E9-B063-4CEC-961D-EBB7593DA043">
         <dmn:inputEntry id="_47B4687C-95C3-498E-B377-5DA5E98EBA16">
+          <dmn:text>-</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_2D4DD44B-C37A-4E63-8644-12A4AF253E76">
           <dmn:text>-</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_D198F4A5-C5D0-4FD4-8F35-557CBD453D3E">
@@ -1387,10 +1415,18 @@
     <dmn:informationRequirement id="_7E494795-E74D-459F-B5A3-0DA7A66C48B9">
       <dmn:requiredInput href="#_BB18241F-5BE4-4309-94EC-7B13020233BD"/>
     </dmn:informationRequirement>
+    <dmn:informationRequirement id="_5FCFBAFE-A53C-44E1-AC82-EDA348F3FEFE">
+      <dmn:requiredInput href="#_F1095AC0-0B2E-4D67-8537-648F3BB6AD79"/>
+    </dmn:informationRequirement>
     <dmn:decisionTable id="_C5CC30E4-88B0-40E2-BECB-EC2DC91AF3E1" hitPolicy="FIRST" preferredOrientation="Rule-as-Row">
       <dmn:input id="_50903F51-6076-42FA-A9E8-36BD27C0760B">
         <dmn:inputExpression id="_72AA9561-F2CE-4B41-978A-2B8FC8253E53" typeRef="string">
           <dmn:text>Total Urban Villages</dmn:text>
+        </dmn:inputExpression>
+      </dmn:input>
+      <dmn:input id="_19310D8E-23C0-4BB5-B4BA-8A434991C2AD">
+        <dmn:inputExpression typeRef="string">
+          <dmn:text>Location ISO Code</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
       <dmn:output id="_44CA54B9-044C-4628-A651-B0C4D2595603"/>
@@ -1399,7 +1435,24 @@
         <dmn:inputEntry id="_37A71449-ED2D-41F3-A61F-E91F814D4F8F">
           <dmn:text>null</dmn:text>
         </dmn:inputEntry>
+        <dmn:inputEntry id="_B0B8C6FA-7239-4530-BEF0-74CDDBE086D5">
+          <dmn:text>"ID-AC"</dmn:text>
+        </dmn:inputEntry>
         <dmn:outputEntry id="_0CDE3666-70B0-4F80-A1DD-330AE9D50F2D">
+          <dmn:text>true</dmn:text>
+        </dmn:outputEntry>
+        <dmn:annotationEntry>
+          <dmn:text/>
+        </dmn:annotationEntry>
+      </dmn:rule>
+      <dmn:rule id="_4E687B57-BEBB-41E2-9D37-83E442AB4F75">
+        <dmn:inputEntry id="_A53F72E7-5F4D-4694-ACA2-18CE2E66CE5A">
+          <dmn:text>null</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_8BFE6FC0-4B6A-4FA7-960A-0AE6CFD04011">
+          <dmn:text>-</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_3E1E6BD9-40F1-46A2-9E1F-54B56D312139">
           <dmn:text>false</dmn:text>
         </dmn:outputEntry>
         <dmn:annotationEntry>
@@ -1408,6 +1461,9 @@
       </dmn:rule>
       <dmn:rule id="_EBE43A46-F8C8-4326-B743-6819D1C32813">
         <dmn:inputEntry id="_C3D68E5F-CBBE-45E2-8921-55F63777922F">
+          <dmn:text>-</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_6B28FF50-BB41-4D61-BA26-34E3AA44D46A">
           <dmn:text>-</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_FBA93F42-08C8-4A06-922D-880B602CF450">
@@ -2453,7 +2509,7 @@
       <dmn:annotation name="annotation-1"/>
       <dmn:rule id="_9B1D66F2-75DD-42BD-BA36-EF11B9F24B61">
         <dmn:inputEntry id="_8528B1F1-D58A-46BC-8617-7BDC73F364EC">
-          <dmn:text>? != null and matches(?, "^(0?[1-9]|1[1,2])\/(0?[1-9]|[12][0-9]|3[01])\/\d{4}$")</dmn:text>
+          <dmn:text>? != null and matches(?, "^(0?[1-9]|1[0-2])\/(0?[1-9]|[12][0-9]|3[01])\/\d{4}$")</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_2F2CF97C-FAB2-429A-AA00-5447CD548871">
           <dmn:text>true</dmn:text>
@@ -2500,18 +2556,10 @@
     <dmn:informationRequirement id="_80DDB6B4-631A-483E-98F6-D1794EE0E6F2">
       <dmn:requiredInput href="#_F1095AC0-0B2E-4D67-8537-648F3BB6AD79"/>
     </dmn:informationRequirement>
-    <dmn:informationRequirement id="_C1751C6F-1E9B-43D7-8D3E-2D272FB90B62">
-      <dmn:requiredInput href="#_14F1BF4E-113D-41E7-9D1C-51869BDE85DA"/>
-    </dmn:informationRequirement>
     <dmn:decisionTable id="_2B3C5BE3-1FE5-4D5B-94D7-CFC6CBAC01FC" hitPolicy="FIRST" preferredOrientation="Rule-as-Row">
       <dmn:input id="_538DFC5D-E552-429C-AF6F-8862B7BA0308">
         <dmn:inputExpression id="_3DA84272-F92A-44BA-9A71-ADB099DAF3BB" typeRef="string">
           <dmn:text>Location ISO Code</dmn:text>
-        </dmn:inputExpression>
-      </dmn:input>
-      <dmn:input id="_3DADC7AF-347F-4CD9-9A2D-A12777500F9B">
-        <dmn:inputExpression id="_3518D01E-B5F8-42BF-83CD-B9EB1757617E" typeRef="string">
-          <dmn:text>Location Level</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
       <dmn:output id="_882F9D65-C464-4F0F-81E6-0738FE5EFC69"/>
@@ -2519,9 +2567,6 @@
       <dmn:rule id="_705CA9B0-C6E4-4115-8AA2-276E4A7EEEF4">
         <dmn:inputEntry id="_26EED464-0EFF-4B70-86EF-599F658C0585">
           <dmn:text>"IDN"</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_C24BA56F-2485-4732-9DEB-0AB27A67A421">
-          <dmn:text>"Country"</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_443112C3-44E6-4DDE-A0B5-7FE0D101399E">
           <dmn:text>"Real value"</dmn:text>
@@ -2534,9 +2579,6 @@
         <dmn:inputEntry id="_6B604943-9296-4E52-AE0E-CC88E76AAD87">
           <dmn:text>? != null and matches(?, "^ID-(JK|RI|JB|BT|JT|SG|BA|KI|YO|SU|JI|KR|SN|JA|MA|PA|MU|SS|AC|KT|LA|ST|SA|SB|PB|KU|SR|KB|KS|BB|BE|NB|NT|GO)$")</dmn:text>
         </dmn:inputEntry>
-        <dmn:inputEntry id="_C7BB08DD-F58E-4402-AEBA-61AB29E0127A">
-          <dmn:text>"Province"</dmn:text>
-        </dmn:inputEntry>
         <dmn:outputEntry id="_97048278-637F-4F13-8B5C-C507E843D489">
           <dmn:text>"Real value"</dmn:text>
         </dmn:outputEntry>
@@ -2548,11 +2590,8 @@
         <dmn:inputEntry id="_E7DBC373-CECE-4E0C-AFD8-B5CE3CACDD61">
           <dmn:text>? != null and matches(?, "^ID-\w{2}$")</dmn:text>
         </dmn:inputEntry>
-        <dmn:inputEntry id="_0EB0F345-F595-4927-8D17-0067B46380E6">
-          <dmn:text>"Province"</dmn:text>
-        </dmn:inputEntry>
         <dmn:outputEntry id="_713A275F-674E-4801-B5E1-663CB6DA849D">
-          <dmn:text>"Accomplished ISO code syntax, however last 2 characters are wrong"</dmn:text>
+          <dmn:text>"Accomplished province ISO code syntax, however last 2 characters are wrong"</dmn:text>
         </dmn:outputEntry>
         <dmn:annotationEntry>
           <dmn:text/>
@@ -2560,9 +2599,6 @@
       </dmn:rule>
       <dmn:rule id="_330BCB5D-DFB0-4732-8718-BD4293187527">
         <dmn:inputEntry id="_FF119925-E7A5-4119-AC0D-F6C5AB68CC1E">
-          <dmn:text>-</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_B8A4F047-2209-484A-BB0C-9511479450A0">
           <dmn:text>-</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_A6DDC318-A028-461B-B1BD-5B38CD75C944">
@@ -2919,7 +2955,7 @@
           <dmn:text>list contains(["DKI Jakarta", "Riau", "Jawa Barat", "Banten", "Jawa Tengah", "Sulawesi Tenggara", "Bali", "Kalimantan Timur", "Daerah Istimewa Yogyakarta", "Sumatera Utara", "Jawa Timur", "Kepulauan Riau", "Sulawesi Selatan", "Jambi", "Maluku", "Papua", "Maluku Utara", "Sumatera Selatan", "Aceh", "Kalimantan Tengah", "Lampung", "Sulawesi Tengah", "Sulawesi Utara", "Sumatera Barat", "Papua Barat", "Kalimantan Utara", "Sulawesi Barat", "Kalimantan Barat", "Kalimantan Selatan", "Kepulauan Bangka Belitung", "Bengkulu", "Nusa Tenggara Barat", "Nusa Tenggara Timur", "Gorontalo"], ?)</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_8153D7DC-7AEB-4538-8935-9E522947F6B8">
-          <dmn:text>-</dmn:text>
+          <dmn:text>!= "Country"</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_E8A00CF7-82FF-4D3D-A42C-609F9E338A9E">
           <dmn:text>true</dmn:text>
@@ -3023,7 +3059,7 @@
           <dmn:text>? != null and matches(?, "^\d+$")</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_D391013F-F42D-4BAE-B277-8419791CD8AB">
-          <dmn:text>-</dmn:text>
+          <dmn:text>!= "ID-JK"</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_0E115279-3A60-4FD5-A0DF-FB535B5F782E">
           <dmn:text>true</dmn:text>
@@ -3092,17 +3128,28 @@
     <dmn:informationRequirement id="_AA279AB4-095F-4645-ACDB-A4E2C43299B1">
       <dmn:requiredInput href="#_621E7C94-4582-4F3A-9258-451D41EEC623"/>
     </dmn:informationRequirement>
+    <dmn:informationRequirement id="_2D000DE6-3D22-41B0-8451-C6251C8DCC2F">
+      <dmn:requiredInput href="#_F1095AC0-0B2E-4D67-8537-648F3BB6AD79"/>
+    </dmn:informationRequirement>
     <dmn:decisionTable id="_A3FF3031-7631-4DE5-92E4-02E1E8DE9F21" hitPolicy="FIRST" preferredOrientation="Rule-as-Row">
       <dmn:input id="_C60558AF-3C92-4C61-A1E6-E6E228007153">
         <dmn:inputExpression id="_36A57A38-82BD-4424-9EBF-EE47A5FA49C5" typeRef="string">
           <dmn:text>Total Cities</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
+      <dmn:input id="_70A03F8F-D32F-4DD9-8F81-913BAEBBDA77">
+        <dmn:inputExpression typeRef="string">
+          <dmn:text>Location ISO Code</dmn:text>
+        </dmn:inputExpression>
+      </dmn:input>
       <dmn:output id="_06C777E8-7D4F-4F0E-949E-AA8DFA801F3F"/>
       <dmn:annotation name="annotation-1"/>
       <dmn:rule id="_45EBF831-A349-4F56-A448-7B2F30674B7C">
         <dmn:inputEntry id="_355363C7-CD83-4A1A-A617-73EB230FBE76">
-          <dmn:text>? != null and matches(?, "^\d+$")</dmn:text>
+          <dmn:text>null</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_3F42DECE-DE6E-4597-9F7B-7FB658C1E72C">
+          <dmn:text>"ID-SR"</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_CBDA0F65-F34A-4023-8843-3EA98990C2B8">
           <dmn:text>true</dmn:text>
@@ -3111,8 +3158,25 @@
           <dmn:text/>
         </dmn:annotationEntry>
       </dmn:rule>
+      <dmn:rule id="_AF151545-0A3E-42C2-BD80-EED4F3A96834">
+        <dmn:inputEntry id="_6A0DCF18-2B1B-455D-964D-BE50E2D48909">
+          <dmn:text>? != null and matches(?, "^\d+$")</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_230D66DE-46D3-47E7-9CDE-A1DEEE5947A5">
+          <dmn:text>!="ID-SR"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_171DFCD0-A4E7-42C0-B957-DE88FC47BC6B">
+          <dmn:text>true</dmn:text>
+        </dmn:outputEntry>
+        <dmn:annotationEntry>
+          <dmn:text/>
+        </dmn:annotationEntry>
+      </dmn:rule>
       <dmn:rule id="_1B264AB2-0441-4585-A2B6-CF99D6DB53BF">
         <dmn:inputEntry id="_46F99E85-B01A-4464-8B76-6CCAA4A580B1">
+          <dmn:text>-</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_4E8A1E1A-E55F-4B53-A03E-B0B0739D3E50">
           <dmn:text>-</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_48042FE8-B348-4E8B-B5E7-B23028E3DA68">
@@ -3168,17 +3232,28 @@
     <dmn:informationRequirement id="_86A62C8A-3057-44E9-A3E1-0F1D5C1D43EE">
       <dmn:requiredInput href="#_BB18241F-5BE4-4309-94EC-7B13020233BD"/>
     </dmn:informationRequirement>
+    <dmn:informationRequirement id="_6FE45313-622D-4DB2-98CF-62B27EBBD535">
+      <dmn:requiredInput href="#_F1095AC0-0B2E-4D67-8537-648F3BB6AD79"/>
+    </dmn:informationRequirement>
     <dmn:decisionTable id="_F2BBE706-2D72-4515-B603-9266A085D82A" hitPolicy="FIRST" preferredOrientation="Rule-as-Row">
       <dmn:input id="_A2E33340-760C-4807-B014-88EA8633A26D">
         <dmn:inputExpression id="_7E232530-BE43-49F3-889E-838E958620D9" typeRef="string">
           <dmn:text>Total Urban Villages</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
+      <dmn:input id="_99FB42D1-0C1B-4E92-9DFA-0AD7A51A97DB">
+        <dmn:inputExpression typeRef="string">
+          <dmn:text>Location ISO Code</dmn:text>
+        </dmn:inputExpression>
+      </dmn:input>
       <dmn:output id="_A4093025-E1B9-4DC8-A3CE-A10D68FD9F08"/>
       <dmn:annotation name="annotation-1"/>
       <dmn:rule id="_86720A8C-E1FF-4663-BF88-A6E477D9753A">
         <dmn:inputEntry id="_7A342998-7B6E-48C1-AA21-F04D2D3C2547">
-          <dmn:text>? != null and matches(?, "^\d+$")</dmn:text>
+          <dmn:text>null</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_EEE78B0C-520D-4FE8-9957-EECAC7AD6F6C">
+          <dmn:text>"ID-AC"</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_C46567FB-478D-491B-8285-3D30D34251EA">
           <dmn:text>true</dmn:text>
@@ -3187,8 +3262,25 @@
           <dmn:text/>
         </dmn:annotationEntry>
       </dmn:rule>
+      <dmn:rule id="_4F13B5CA-5C90-4A2F-980E-A2F65555FB77">
+        <dmn:inputEntry id="_A4752AB1-CE8B-4A62-8F21-70FC65681EDD">
+          <dmn:text>? != null and matches(?, "^\d+$")</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_C2D5D893-0500-4D37-9E51-9BD6CB30D0C9">
+          <dmn:text>!="ID-AC"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_DA1E1501-3C4D-4B6D-AF6E-8A85F9979B1A">
+          <dmn:text>true</dmn:text>
+        </dmn:outputEntry>
+        <dmn:annotationEntry>
+          <dmn:text/>
+        </dmn:annotationEntry>
+      </dmn:rule>
       <dmn:rule id="_8AB46F2D-1615-416B-A2A2-7417D326875F">
         <dmn:inputEntry id="_F36B4A14-E07B-4E04-86EE-0FAA8969369C">
+          <dmn:text>-</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_3DE970CD-0837-46E3-B8F4-045D27A4CFF0">
           <dmn:text>-</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_C170CA20-0E58-40A9-A274-68C183DAF674">
@@ -3279,7 +3371,7 @@
           <dmn:text>list contains(["Jawa", "Sumatera", "Sulawesi", "Nusa Tenggara", "Kalimantan", "Maluku", "Papua"], ?)</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_8D31E7D2-5E15-480A-9614-0F3532FEDD2D">
-          <dmn:text>-</dmn:text>
+          <dmn:text>!="Country"</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_AFC0570B-012A-4C21-A3CD-CA2F8213BAF6">
           <dmn:text>true</dmn:text>
@@ -4486,7 +4578,7 @@
           <dmn:text>-</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_0E7BD1C6-73B7-4448-BB0A-C73729A3CB24">
-          <dmn:text>"Consistence couldn't be checked due to some input data doesn't fulfill number format or is null"</dmn:text>
+          <dmn:text>"Consistency couldn't be checked due to some input data doesn't fulfill number format or is null"</dmn:text>
         </dmn:outputEntry>
         <dmn:annotationEntry>
           <dmn:text/>
@@ -4538,7 +4630,7 @@
           <dmn:text>-</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_9B0698FD-A760-4827-AC5B-B5D48806AE66">
-          <dmn:text>"Consistence couldn't be checked due to some input data doesn't fulfill number format or is null"</dmn:text>
+          <dmn:text>"Consistency couldn't be checked due to some input data doesn't fulfill number format or is null"</dmn:text>
         </dmn:outputEntry>
         <dmn:annotationEntry>
           <dmn:text/>
@@ -4590,7 +4682,7 @@
           <dmn:text>-</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_AB50D3F4-8736-468C-AE43-A3F3E73AB369">
-          <dmn:text>"Consistence couldn't be checked due to some input data doesn't fulfill number format or is null"</dmn:text>
+          <dmn:text>"Consistency couldn't be checked due to some input data doesn't fulfill number format or is null"</dmn:text>
         </dmn:outputEntry>
         <dmn:annotationEntry>
           <dmn:text/>
@@ -4598,16 +4690,27 @@
       </dmn:rule>
     </dmn:decisionTable>
   </dmn:decision>
-  <dmn:decision id="_30DE2114-C5F5-455A-B58F-4E5F62C86D2C" name="TotalCitiesDistrictsConsistency">
+  <dmn:decision id="_30DE2114-C5F5-455A-B58F-4E5F62C86D2C" name="TotalRegenciesCitiesDistrictsConsistency">
     <dmn:extensionElements/>
-    <dmn:variable id="_11965E32-9F40-4C05-AA9C-655433F913DC" name="TotalCitiesDistrictsConsistency" typeRef="string"/>
+    <dmn:variable id="_11965E32-9F40-4C05-AA9C-655433F913DC" name="TotalRegenciesCitiesDistrictsConsistency" typeRef="string"/>
     <dmn:informationRequirement id="_A763FD98-BA95-4745-BBD3-3FD90BEB8054">
       <dmn:requiredInput href="#_621E7C94-4582-4F3A-9258-451D41EEC623"/>
     </dmn:informationRequirement>
     <dmn:informationRequirement id="_AC1ACF27-2FE6-493B-ADC1-7795D515891C">
       <dmn:requiredInput href="#_F022D567-7496-4078-99AD-E8B3E7EA1565"/>
     </dmn:informationRequirement>
+    <dmn:informationRequirement id="_E078F410-4468-4953-8F80-B0C0B344FB74">
+      <dmn:requiredInput href="#_C2EC8B63-2A87-47AE-B529-C62B6C2CA62F"/>
+    </dmn:informationRequirement>
+    <dmn:informationRequirement id="_CDCF19DD-65E8-465F-BC12-666812DD2C83">
+      <dmn:requiredInput href="#_F1095AC0-0B2E-4D67-8537-648F3BB6AD79"/>
+    </dmn:informationRequirement>
     <dmn:decisionTable id="_4E17790B-54BC-45C3-95D3-B76743B483AD" hitPolicy="FIRST" preferredOrientation="Rule-as-Row">
+      <dmn:input id="_35415417-FFE6-49F4-ADCC-D4ECC4EC094C">
+        <dmn:inputExpression>
+          <dmn:text>Total Regencies</dmn:text>
+        </dmn:inputExpression>
+      </dmn:input>
       <dmn:input id="_A566562C-2037-4319-91D2-F670F1C54A74">
         <dmn:inputExpression id="_FADB794B-37D5-4481-92B4-D9DCCBF3393C" typeRef="string">
           <dmn:text>Total Cities</dmn:text>
@@ -4618,31 +4721,88 @@
           <dmn:text>Total Districts</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
+      <dmn:input id="_1462DB01-1AA6-468A-8F2E-EA59BA8B8098">
+        <dmn:inputExpression typeRef="string">
+          <dmn:text>Location ISO Code</dmn:text>
+        </dmn:inputExpression>
+      </dmn:input>
       <dmn:output id="_34F6DEEA-5F02-471F-9606-56E903AD09AF"/>
       <dmn:annotation name="annotation-1"/>
       <dmn:rule id="_7DC50D02-F209-476F-8891-65894FA51457">
-        <dmn:inputEntry id="_7F804FDB-D8D1-4625-9DCE-D45201073E4F">
+        <dmn:inputEntry id="_588CCB62-C20B-4215-A444-40391569AB58">
           <dmn:text>? != null and matches(?,"^\d+$")</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_7F804FDB-D8D1-4625-9DCE-D45201073E4F">
+          <dmn:text>null</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_801981F9-B81B-4A74-97FC-63AB3456D11C">
           <dmn:text>? != null and matches(?,"^\d+$")</dmn:text>
         </dmn:inputEntry>
+        <dmn:inputEntry id="_B191AACA-52E9-4746-AB18-47580488BEFA">
+          <dmn:text>"ID-SR"</dmn:text>
+        </dmn:inputEntry>
         <dmn:outputEntry id="_02F6B095-922F-43C8-8581-EDB67219AFD9">
-          <dmn:text>if (number(Total Cities, ",", ".") &lt;= number(Total Districts, ",", ".")) then "Higher or equal" else "Lower"</dmn:text>
+          <dmn:text>if (number(Total Regencies, ",", ".") &lt;= number(Total Districts, ",", ".")) then "Higher or equal" else "Lower"</dmn:text>
+        </dmn:outputEntry>
+        <dmn:annotationEntry>
+          <dmn:text/>
+        </dmn:annotationEntry>
+      </dmn:rule>
+      <dmn:rule id="_2FA62D6D-815F-4F96-8D62-870991FB4C86">
+        <dmn:inputEntry id="_3D8CD6F9-F386-45B0-80F8-ADDC7C1AFF2E">
+          <dmn:text>? != null and matches(?,"^\d+$")</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_1B7C0641-863F-47E0-86CE-EE942EDBEE0D">
+          <dmn:text>? != null and matches(?,"^\d+$")</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_8985875F-68DB-4C29-9E42-A975AC24816D">
+          <dmn:text>? != null and matches(?,"^\d+$")</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_F8E63937-D653-4D0E-8F42-65319A3931CD">
+          <dmn:text>!= "ID-SR"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_EAE0D8BC-A061-4551-8BEE-9C9DB09A90A8">
+          <dmn:text>if (number(Total Regencies, ",", ".") &lt;= number(Total Districts, ",", ".") and number(Total Cities, ",", ".") &lt;= number(Total Districts, ",", ".")) then "Higher or equal" else "Lower"</dmn:text>
+        </dmn:outputEntry>
+        <dmn:annotationEntry>
+          <dmn:text/>
+        </dmn:annotationEntry>
+      </dmn:rule>
+      <dmn:rule id="_9C1233BB-32F3-49B7-AF06-F57657280E58">
+        <dmn:inputEntry id="_498E6C04-046F-45DD-A594-B2A3D7148C2B">
+          <dmn:text>-</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_A44680A5-3754-432D-9856-0BFCBC66EB1A">
+          <dmn:text>not(null)</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_A2A60856-4AEE-4B4F-AC8D-A6AA77E22B37">
+          <dmn:text>-</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_D154AE82-9A21-42E7-936E-E2F75A628845">
+          <dmn:text>"ID-SR"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_28406CAB-AD8C-4476-A968-01AEAB3F294D">
+          <dmn:text>"Cities were detected for ID-SR, which is not real"</dmn:text>
         </dmn:outputEntry>
         <dmn:annotationEntry>
           <dmn:text/>
         </dmn:annotationEntry>
       </dmn:rule>
       <dmn:rule id="_E2F4E223-F891-4AE0-AC17-20CBE0BA5FB2">
+        <dmn:inputEntry id="_D943D405-E879-4915-959C-54799C77DD87">
+          <dmn:text>-</dmn:text>
+        </dmn:inputEntry>
         <dmn:inputEntry id="_488172F1-4613-46CE-9195-B7D48A213F98">
           <dmn:text>-</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_41F58B42-1729-4127-AF5E-97230CA5EBEC">
           <dmn:text>-</dmn:text>
         </dmn:inputEntry>
+        <dmn:inputEntry id="_EAF76479-1FC1-47D9-9E4C-4C720727A636">
+          <dmn:text>-</dmn:text>
+        </dmn:inputEntry>
         <dmn:outputEntry id="_7DF36B9F-9D88-4451-80A7-95CD4D7189B7">
-          <dmn:text>"Consistence couldn't be checked due to some input data doesn't fulfill number format or is null"</dmn:text>
+          <dmn:text>"Consistency couldn't be checked due to some input data doesn't fulfill number format or is null"</dmn:text>
         </dmn:outputEntry>
         <dmn:annotationEntry>
           <dmn:text/>
@@ -4650,16 +4810,27 @@
       </dmn:rule>
     </dmn:decisionTable>
   </dmn:decision>
-  <dmn:decision id="_0B11D4B7-E85B-4077-BF7B-2D86F06B0EBD" name="TotalDistrictsUrbanVillagesConsistency">
+  <dmn:decision id="_0B11D4B7-E85B-4077-BF7B-2D86F06B0EBD" name="TotalDistrictsVillagesConsistency">
     <dmn:extensionElements/>
-    <dmn:variable id="_630FC241-8FEC-4C32-B56F-760F175B9FD3" name="TotalDistrictsUrbanVillagesConsistency" typeRef="string"/>
+    <dmn:variable id="_630FC241-8FEC-4C32-B56F-760F175B9FD3" name="TotalDistrictsVillagesConsistency" typeRef="string"/>
     <dmn:informationRequirement id="_A726181E-9D15-4269-9B1A-5DFB88E6E55D">
       <dmn:requiredInput href="#_F022D567-7496-4078-99AD-E8B3E7EA1565"/>
     </dmn:informationRequirement>
     <dmn:informationRequirement id="_B42071AD-72AA-44E6-A80C-B01DEEFE68B4">
       <dmn:requiredInput href="#_BB18241F-5BE4-4309-94EC-7B13020233BD"/>
     </dmn:informationRequirement>
+    <dmn:informationRequirement id="_24C619D7-83E9-4FD4-B86D-CC7B2C629CDA">
+      <dmn:requiredInput href="#_77AA65D9-BE5F-4831-A490-FA8FAAADF8B2"/>
+    </dmn:informationRequirement>
+    <dmn:informationRequirement id="_C1979EC0-DCE4-4385-97D6-421AF454625F">
+      <dmn:requiredInput href="#_F1095AC0-0B2E-4D67-8537-648F3BB6AD79"/>
+    </dmn:informationRequirement>
     <dmn:decisionTable id="_73732BB5-5749-4935-AEBF-E4178C5F7DE8" hitPolicy="FIRST" preferredOrientation="Rule-as-Row">
+      <dmn:input id="_61763D46-B7E3-40D7-AC08-5EDCC17E77DD">
+        <dmn:inputExpression typeRef="string">
+          <dmn:text>Location ISO Code</dmn:text>
+        </dmn:inputExpression>
+      </dmn:input>
       <dmn:input id="_328D4108-DD19-421A-9FFC-0AF379986413">
         <dmn:inputExpression id="_D6B5774E-E341-4519-8EE7-52FB365126E3" typeRef="string">
           <dmn:text>Total Districts</dmn:text>
@@ -4670,14 +4841,25 @@
           <dmn:text>Total Urban Villages</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
+      <dmn:input id="_6D724C7D-7941-4A32-83AF-BCA1315E58C8">
+        <dmn:inputExpression typeRef="string">
+          <dmn:text>Total Rural Villages</dmn:text>
+        </dmn:inputExpression>
+      </dmn:input>
       <dmn:output id="_F0260E9B-17CB-4C85-910A-52A66CE34D98"/>
       <dmn:annotation name="annotation-1"/>
       <dmn:rule id="_CE5A4121-EF8A-47CD-B234-D2ADEC94CE8B">
+        <dmn:inputEntry id="_15409FE6-D685-4B54-95A8-A185BDB2FCF6">
+          <dmn:text>"ID-JK"</dmn:text>
+        </dmn:inputEntry>
         <dmn:inputEntry id="_47B83911-DFAB-4D96-A410-31CA85FFEDAA">
           <dmn:text>? != null and matches(?,"^\d+$")</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_EC850957-906E-44EC-8BAE-330E6FE31AAF">
           <dmn:text>? != null and matches(?,"^\d+$")</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_F43EC061-CE21-40F6-9C45-E3765FBFB24B">
+          <dmn:text>null</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_D69C5719-18CD-473D-A2FD-7A62B157BE74">
           <dmn:text>if (number(Total Districts, ",", ".") &lt;= number(Total Urban Villages, ",", ".")) then "Higher or equal" else "Lower"</dmn:text>
@@ -4686,15 +4868,101 @@
           <dmn:text/>
         </dmn:annotationEntry>
       </dmn:rule>
+      <dmn:rule id="_ECFC9794-D797-4F17-94F7-572403D1788B">
+        <dmn:inputEntry id="_898193B7-4E96-4D10-A5ED-B57D301BBFBF">
+          <dmn:text>"ID-AC"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_F848AFBD-E971-465D-A511-1DEC5FEACF69">
+          <dmn:text>? != null and matches(?,"^\d+$")</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_A4684B94-2BC2-4690-9450-46B6C1B29EA7">
+          <dmn:text>null</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_89EA064D-315C-4C47-ACEB-A2B9CCF4613B">
+          <dmn:text>? != null and matches(?,"^\d+$")</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_AF6452C6-B520-4B56-9B1C-46380B06A81E">
+          <dmn:text>if (number(Total Districts, ",", ".") &lt;= number(Total Rural Villages, ",", ".")) then "Higher or equal" else "Lower"</dmn:text>
+        </dmn:outputEntry>
+        <dmn:annotationEntry>
+          <dmn:text/>
+        </dmn:annotationEntry>
+      </dmn:rule>
+      <dmn:rule id="_5A72E83A-DBE9-4F5B-A549-E8CC4754E527">
+        <dmn:inputEntry id="_B9550A42-5210-4608-8CD5-C41805E07E53">
+          <dmn:text>? != "ID-JK" and ? != "ID-AC"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_15D8F373-D057-4384-9E37-D46B17803176">
+          <dmn:text>? != null and matches(?,"^\d+$")</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_AD02D8B2-C699-45FE-81FD-30C88A7D20CA">
+          <dmn:text>? != null and matches(?,"^\d+$")</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_4C5E95D0-90C1-48CB-B87D-2A9C0A748E48">
+          <dmn:text>? != null and matches(?,"^\d+$")</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_6801E3D1-DC64-4B08-9938-293759AD89EB">
+          <dmn:text>if (number(Total Districts, ",", ".") &lt;= number(Total Urban Villages, ",", ".") and number(Total Districts, ",", ".") &lt;= number(Total Rural Villages, ",", ".")) then "Higher or equal" else "Lower"</dmn:text>
+        </dmn:outputEntry>
+        <dmn:annotationEntry>
+          <dmn:text/>
+        </dmn:annotationEntry>
+      </dmn:rule>
+      <dmn:rule id="_FC01592A-4A78-480C-93DF-6D3DFDBCFF7F">
+        <dmn:inputEntry id="_66530554-D749-4AB6-86A9-96A3F1C9B42A">
+          <dmn:text>"ID-JK"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_35C26A00-B818-45BD-ABAA-9259523FB33C">
+          <dmn:text>-</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_D14B556B-2923-4B74-9963-67FECF270D33">
+          <dmn:text>-</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_29BE281E-1FE1-46FB-9A85-71873B366BEA">
+          <dmn:text>not(null)</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_B1C7A1B1-31C1-4DF5-B54E-48DAB38D6F38">
+          <dmn:text>"Rural Villages were detected for ID-KJ, which is not real"</dmn:text>
+        </dmn:outputEntry>
+        <dmn:annotationEntry>
+          <dmn:text/>
+        </dmn:annotationEntry>
+      </dmn:rule>
+      <dmn:rule id="_F2106522-2C61-4C88-93E2-6E2416769DE3">
+        <dmn:inputEntry id="_C1EAD96F-DD80-48DF-821E-ED57B18F4790">
+          <dmn:text>"ID-AC"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_6239A2D8-1F8C-43F7-8F4B-C6121CAFBF69">
+          <dmn:text>-</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_B8A7C02A-91EE-479C-AC6E-3A376CEDB708">
+          <dmn:text>not(null)</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_2472C697-4705-44C9-8DC7-8298B224A15A">
+          <dmn:text>-</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_4D5516FA-967E-4253-BEAD-D4F2807ECA4A">
+          <dmn:text>"Urban Villages were detected for ID-AC, which is not real"</dmn:text>
+        </dmn:outputEntry>
+        <dmn:annotationEntry>
+          <dmn:text/>
+        </dmn:annotationEntry>
+      </dmn:rule>
       <dmn:rule id="_3F1B430D-DA62-427C-A8BC-A3FFE3F10C32">
+        <dmn:inputEntry id="_42B29BE9-ABB1-4D78-B542-3C6C2F5410E4">
+          <dmn:text>-</dmn:text>
+        </dmn:inputEntry>
         <dmn:inputEntry id="_309D585C-B214-4764-92E0-5754B53B9D6A">
           <dmn:text>-</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_D6F1AC37-F628-4018-97F4-413BFF60AA0D">
           <dmn:text>-</dmn:text>
         </dmn:inputEntry>
+        <dmn:inputEntry id="_AFE82867-4320-45DF-8D9D-15AC69C0777F">
+          <dmn:text>-</dmn:text>
+        </dmn:inputEntry>
         <dmn:outputEntry id="_A8CD9B69-CEE8-4AE6-838C-E7398B871387">
-          <dmn:text>"Consistence couldn't be checked due to some input data doesn't fulfill number format or is null"</dmn:text>
+          <dmn:text>"Consistency couldn't be checked due to some input data doesn't fulfill number format or is null"</dmn:text>
         </dmn:outputEntry>
         <dmn:annotationEntry>
           <dmn:text/>
@@ -4764,7 +5032,7 @@
           <dmn:text>-</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_042F9148-BCC5-4802-9FC5-C9ECC6B2B533">
-          <dmn:text>"Consistence couldn't be checked due to some input data doesn't fulfill number format or is null"</dmn:text>
+          <dmn:text>"Consistency couldn't be checked due to some input data doesn't fulfill number format or is null"</dmn:text>
         </dmn:outputEntry>
         <dmn:outputEntry id="_753CF8DA-9311-4660-94AB-CFE2139E6E29">
           <dmn:text>"-1"</dmn:text>
@@ -4837,7 +5105,7 @@
           <dmn:text>-</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_8CA21D80-443D-4924-8CC0-D12937C7F67C">
-          <dmn:text>"Consistence couldn't be checked due to some input data doesn't fulfill number format or is null"</dmn:text>
+          <dmn:text>"Consistency couldn't be checked due to some input data doesn't fulfill number format or is null"</dmn:text>
         </dmn:outputEntry>
         <dmn:outputEntry id="_49F51451-3DC9-41E4-BCD4-AB9AB134FB2A">
           <dmn:text>"-1"</dmn:text>
@@ -4910,7 +5178,7 @@
           <dmn:text>-</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_A8BCB7E3-F5E8-41F8-AB35-6798C0849CB8">
-          <dmn:text>"Consistence couldn't be checked due to some input data doesn't fulfill number format or is null"</dmn:text>
+          <dmn:text>"Consistency couldn't be checked due to some input data doesn't fulfill number format or is null"</dmn:text>
         </dmn:outputEntry>
         <dmn:outputEntry id="_425C9039-12A2-46A1-9748-9646EA7B0053">
           <dmn:text>"-1"</dmn:text>
@@ -4983,7 +5251,7 @@
           <dmn:text>-</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_5154AC85-3726-4D09-8BDD-B3FF0238DD8E">
-          <dmn:text>"Consistence couldn't be checked due to some input data doesn't fulfill number format or is null"</dmn:text>
+          <dmn:text>"Consistency couldn't be checked due to some input data doesn't fulfill number format or is null"</dmn:text>
         </dmn:outputEntry>
         <dmn:outputEntry id="_535099AB-2205-41BB-B167-6C3132BB919A">
           <dmn:text>"-1"</dmn:text>
@@ -5056,7 +5324,7 @@
           <dmn:text>-</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_07BC5DC8-72F2-4711-BF9F-087BA5D952FF">
-          <dmn:text>"Consistence couldn't be checked due to some input data doesn't fulfill number format or is null"</dmn:text>
+          <dmn:text>"Consistency couldn't be checked due to some input data doesn't fulfill number format or is null"</dmn:text>
         </dmn:outputEntry>
         <dmn:outputEntry id="_1D86B046-CE27-4302-9A8C-27F2FB60D392">
           <dmn:text>"-1"</dmn:text>
@@ -5104,6 +5372,11 @@
       <dmn:requiredDecision href="#_6B22F816-DE93-4B4C-8903-13EA9EAA9B4C"/>
     </dmn:informationRequirement>
     <dmn:decisionTable id="_90EB2218-81BD-46E8-9B2F-678BF0AFC56F" hitPolicy="FIRST" preferredOrientation="Rule-as-Row">
+      <dmn:input id="_94158E17-C5F4-494A-8424-5ABC2FBD8C7C">
+        <dmn:inputExpression typeRef="boolean">
+          <dmn:text>LocationISOCodeLevelConsistency</dmn:text>
+        </dmn:inputExpression>
+      </dmn:input>
       <dmn:input id="_65F27917-C3C3-4F03-B727-1564A755A8C1">
         <dmn:inputExpression id="_96C3F732-5D0E-4D8B-BE03-1ABF7BD2DE72" typeRef="string">
           <dmn:text>NewTotalCasesConsistency</dmn:text>
@@ -5119,19 +5392,14 @@
           <dmn:text>NewTotalRecoveredConsistency</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
-      <dmn:input id="_2CDDC335-A939-455E-B5A9-E3AFCB4596D3">
-        <dmn:inputExpression id="_0A88FFFF-D8FF-4388-B122-8331A30C470B" typeRef="boolean">
-          <dmn:text>LocationISOCodeLevelRuralConsistency</dmn:text>
-        </dmn:inputExpression>
-      </dmn:input>
       <dmn:input id="_D7961F0C-1FAB-414F-A39D-22C56B4B2E5E">
         <dmn:inputExpression id="_A97A04C1-54E2-42DC-80CB-14FDC5824EB9" typeRef="string">
-          <dmn:text>TotalCitiesDistrictsConsistency</dmn:text>
+          <dmn:text>TotalRegenciesCitiesDistrictsConsistency</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
       <dmn:input id="_21229A2D-2883-450B-BC64-44E77B145E8C">
         <dmn:inputExpression id="_D0E5FD0B-D755-45FA-92E2-BFC1B20B1F4F" typeRef="string">
-          <dmn:text>TotalDistrictsUrbanVillagesConsistency</dmn:text>
+          <dmn:text>TotalDistrictsVillagesConsistency</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
       <dmn:input id="_EE234094-2BC3-400C-AAC1-5B131D1BC27B">
@@ -5162,6 +5430,9 @@
       <dmn:output id="_60981C8A-E92A-4C28-ACC1-533CD8CBDD62"/>
       <dmn:annotation name="annotation-1"/>
       <dmn:rule id="_8F00A9E2-5E8D-41ED-86DB-49495BC8166E">
+        <dmn:inputEntry id="_DFDD138D-0C8B-48D2-93C9-491376684A7C">
+          <dmn:text>true</dmn:text>
+        </dmn:inputEntry>
         <dmn:inputEntry id="_8650A96E-B5AD-4E3E-AC07-BEB6A666D6A1">
           <dmn:text>"Higher or equal"</dmn:text>
         </dmn:inputEntry>
@@ -5170,9 +5441,6 @@
         </dmn:inputEntry>
         <dmn:inputEntry id="_396DCC65-DD73-4595-9700-58ECC26DB720">
           <dmn:text>"Higher or equal"</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_5D90C7ED-05D2-4F1B-99AE-D1F8A0991F92">
-          <dmn:text>true</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_FA0FA9AF-4DD4-466A-B003-6E55AC0F2A15">
           <dmn:text>"Higher or equal"</dmn:text>
@@ -5203,6 +5471,9 @@
         </dmn:annotationEntry>
       </dmn:rule>
       <dmn:rule id="_F7E64B10-6102-4BF8-836D-F5EA3B4D7026">
+        <dmn:inputEntry id="_2ACEE641-26D2-4663-9EE8-617612AE4737">
+          <dmn:text>true</dmn:text>
+        </dmn:inputEntry>
         <dmn:inputEntry id="_AE7F1D66-402B-44D6-B0BF-CE8801B18DB7">
           <dmn:text>"Higher or equal"</dmn:text>
         </dmn:inputEntry>
@@ -5211,9 +5482,6 @@
         </dmn:inputEntry>
         <dmn:inputEntry id="_C3C5ECB1-137C-4615-A66D-CF6A7A58E676">
           <dmn:text>"Higher or equal"</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_14217EFF-8FBC-4F09-B2BD-B32338F9660A">
-          <dmn:text>true</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_42061AD2-715F-4557-B4F2-5F3D1CA2B454">
           <dmn:text>"Higher or equal"</dmn:text>
@@ -5244,6 +5512,9 @@
         </dmn:annotationEntry>
       </dmn:rule>
       <dmn:rule id="_B9847D02-C7FE-4850-91A4-3D0F1BAE5973">
+        <dmn:inputEntry id="_4625D3CA-D382-4FBF-A1F9-859481532946">
+          <dmn:text>true</dmn:text>
+        </dmn:inputEntry>
         <dmn:inputEntry id="_189E01CF-64D6-4509-B0CE-06FE6AC40B80">
           <dmn:text>"Higher or equal"</dmn:text>
         </dmn:inputEntry>
@@ -5252,9 +5523,6 @@
         </dmn:inputEntry>
         <dmn:inputEntry id="_C4D20A0B-D48F-4D61-8882-AA4FBE13A57E">
           <dmn:text>"Higher or equal"</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_7B6F50DA-3EA7-436A-A0F5-7C095273EB08">
-          <dmn:text>true</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_9E915485-BCB4-44D2-ADBB-46F01027B5CA">
           <dmn:text>"Higher or equal"</dmn:text>
@@ -5285,6 +5553,9 @@
         </dmn:annotationEntry>
       </dmn:rule>
       <dmn:rule id="_8A07302F-59B6-43A9-B075-E420BDE4145D">
+        <dmn:inputEntry id="_6AF814C0-EFC7-41FF-928C-CD469A69E8B9">
+          <dmn:text>true</dmn:text>
+        </dmn:inputEntry>
         <dmn:inputEntry id="_CE62AF09-AA96-499A-833F-C3EA21944D5C">
           <dmn:text>"Higher or equal"</dmn:text>
         </dmn:inputEntry>
@@ -5293,9 +5564,6 @@
         </dmn:inputEntry>
         <dmn:inputEntry id="_D96808CC-D554-42B2-B694-7E3C5D755DB4">
           <dmn:text>"Higher or equal"</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_ABBF962E-2F28-4E3F-873A-48A67B28A387">
-          <dmn:text>true</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_1ACB0525-111B-4603-87EA-7ED41D3E2E34">
           <dmn:text>-</dmn:text>
@@ -5326,6 +5594,9 @@
         </dmn:annotationEntry>
       </dmn:rule>
       <dmn:rule id="_CE7D781A-030C-4735-9434-7EC14B7A1211">
+        <dmn:inputEntry id="_8FABED4F-0380-4A13-9E27-D3BA451E67D0">
+          <dmn:text>-</dmn:text>
+        </dmn:inputEntry>
         <dmn:inputEntry id="_A15B54B1-460F-4B28-814E-F52112362EC9">
           <dmn:text>-</dmn:text>
         </dmn:inputEntry>
@@ -5333,9 +5604,6 @@
           <dmn:text>-</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_906D0A86-03A1-47E9-B92C-53DEC7E501A8">
-          <dmn:text>-</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_27CF3180-9F38-404C-8FE7-E0151C08BC9E">
           <dmn:text>-</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_24F3E4D5-D90C-4A61-98BD-8DA728DF9915">
@@ -5368,17 +5636,14 @@
       </dmn:rule>
     </dmn:decisionTable>
   </dmn:decision>
-  <dmn:decision id="_6B22F816-DE93-4B4C-8903-13EA9EAA9B4C" name="LocationISOCodeLevelRuralConsistency">
+  <dmn:decision id="_6B22F816-DE93-4B4C-8903-13EA9EAA9B4C" name="LocationISOCodeLevelConsistency">
     <dmn:extensionElements/>
-    <dmn:variable id="_D5C9255B-1EF9-443C-8F44-75881D62DD26" name="LocationISOCodeLevelRuralConsistency" typeRef="boolean"/>
+    <dmn:variable id="_D5C9255B-1EF9-443C-8F44-75881D62DD26" name="LocationISOCodeLevelConsistency" typeRef="boolean"/>
     <dmn:informationRequirement id="_451C852D-2CDF-41FE-A781-63903232E9BF">
       <dmn:requiredInput href="#_F1095AC0-0B2E-4D67-8537-648F3BB6AD79"/>
     </dmn:informationRequirement>
     <dmn:informationRequirement id="_1D086910-FE93-44B0-8530-804E0C0DFA09">
       <dmn:requiredInput href="#_14F1BF4E-113D-41E7-9D1C-51869BDE85DA"/>
-    </dmn:informationRequirement>
-    <dmn:informationRequirement id="_BB6A6B8C-8F7D-40C8-A776-54E3EBD42011">
-      <dmn:requiredInput href="#_77AA65D9-BE5F-4831-A490-FA8FAAADF8B2"/>
     </dmn:informationRequirement>
     <dmn:decisionTable id="_B90D0677-EF65-4475-8673-B6B62EE72350" hitPolicy="FIRST" preferredOrientation="Rule-as-Row">
       <dmn:input id="_DFBE8871-1097-419D-871A-D41CD2460D62">
@@ -5391,11 +5656,6 @@
           <dmn:text>Location Level</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
-      <dmn:input id="_4986AC62-048B-4EEA-86E6-0D6043B7C916">
-        <dmn:inputExpression id="_FD07F2DC-DD96-4901-A7F0-E5FE571EE16D" typeRef="string">
-          <dmn:text>Total Rural Villages</dmn:text>
-        </dmn:inputExpression>
-      </dmn:input>
       <dmn:output id="_5D4F1B83-F298-4F67-9D90-C660F5F2DEE6"/>
       <dmn:annotation name="annotation-1"/>
       <dmn:rule id="_3FE8DF57-7A0E-4F14-8E43-8E1B7308658E">
@@ -5404,9 +5664,6 @@
         </dmn:inputEntry>
         <dmn:inputEntry id="_940A05AE-C09A-4490-AD17-B7C625AF7CAB">
           <dmn:text>"Country"</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_F80F898F-15E9-4241-8715-0D873314BBA7">
-          <dmn:text>not(null)</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_29AA257D-2A87-49DC-8A59-F6FEE7187F01">
           <dmn:text>true</dmn:text>
@@ -5417,576 +5674,12 @@
       </dmn:rule>
       <dmn:rule id="_3F349CBD-2E5E-4315-8D73-7213BA182921">
         <dmn:inputEntry id="_BA0C50B6-6CAE-44CB-A6C9-63D1FC2A8255">
-          <dmn:text>"ID-RI"</dmn:text>
+          <dmn:text>? != null and matches(?, "^ID-(JK|RI|JB|BT|JT|SG|BA|KI|YO|SU|JI|KR|SN|JA|MA|PA|MU|SS|AC|KT|LA|ST|SA|SB|PB|KU|SR|KB|KS|BB|BE|NB|NT|GO)$")</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_AA14D9BF-A7EA-4B69-B539-DF1850B4B3C1">
           <dmn:text>"Province"</dmn:text>
         </dmn:inputEntry>
-        <dmn:inputEntry id="_D556E1A5-DD42-44A4-BC48-EE810F908726">
-          <dmn:text>not(null)</dmn:text>
-        </dmn:inputEntry>
         <dmn:outputEntry id="_9E3CA7CB-3355-4721-9E4A-409D82257339">
-          <dmn:text>true</dmn:text>
-        </dmn:outputEntry>
-        <dmn:annotationEntry>
-          <dmn:text/>
-        </dmn:annotationEntry>
-      </dmn:rule>
-      <dmn:rule id="_1A0E6B29-8EA2-43E3-A1E1-BAD28A338229">
-        <dmn:inputEntry id="_B1ED850B-693C-48DA-B138-259F84E34052">
-          <dmn:text>"ID-JB"</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_9CDB5981-9E46-4F9F-BE0B-F03B61A3114A">
-          <dmn:text>"Province"</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_965364DE-AC9A-4459-B62D-D491AB9C6CAB">
-          <dmn:text>not(null)</dmn:text>
-        </dmn:inputEntry>
-        <dmn:outputEntry id="_0031DEFC-4CBE-4D6B-9537-9E66928E6DC1">
-          <dmn:text>true</dmn:text>
-        </dmn:outputEntry>
-        <dmn:annotationEntry>
-          <dmn:text/>
-        </dmn:annotationEntry>
-      </dmn:rule>
-      <dmn:rule id="_14AF0838-49B3-4D8A-86B9-CC97A953C815">
-        <dmn:inputEntry id="_5CE0A752-F7D8-4E2A-8E3B-8164ABFEC9B7">
-          <dmn:text>"ID-BT"</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_52DD3F02-0789-4CCA-80F8-7ABB72556367">
-          <dmn:text>"Province"</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_725966F1-0E58-4F18-919E-D296510439C5">
-          <dmn:text>not(null)</dmn:text>
-        </dmn:inputEntry>
-        <dmn:outputEntry id="_A2D81D64-3966-4412-97FE-9D6B18FB8E69">
-          <dmn:text>true</dmn:text>
-        </dmn:outputEntry>
-        <dmn:annotationEntry>
-          <dmn:text/>
-        </dmn:annotationEntry>
-      </dmn:rule>
-      <dmn:rule id="_49F8E413-D451-484C-93F2-CBF79FEF8391">
-        <dmn:inputEntry id="_A2118398-AD08-42EA-A86D-BDA558892D1D">
-          <dmn:text>"ID-JT"</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_B8BCED13-CFE6-40E4-B5AE-47314E14B2EE">
-          <dmn:text>"Province"</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_1E1F9F36-0A9D-4B90-A4F5-1F35E8B52FE0">
-          <dmn:text>not(null)</dmn:text>
-        </dmn:inputEntry>
-        <dmn:outputEntry id="_6D1DE341-61A7-4961-BF5A-86197900EB80">
-          <dmn:text>true</dmn:text>
-        </dmn:outputEntry>
-        <dmn:annotationEntry>
-          <dmn:text/>
-        </dmn:annotationEntry>
-      </dmn:rule>
-      <dmn:rule id="_A459EA07-61B3-4DF6-B61C-21620EDEEBF6">
-        <dmn:inputEntry id="_24DEC43B-5AC9-406F-AF53-5B61344F87BD">
-          <dmn:text>"ID-SG"</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_EECB0116-590E-495B-A99D-E8A1DF1A7C02">
-          <dmn:text>"Province"</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_3444D672-6740-4BAB-B59B-63A05EA4E30C">
-          <dmn:text>not(null)</dmn:text>
-        </dmn:inputEntry>
-        <dmn:outputEntry id="_174796AD-280A-4888-B1FC-03E35F0534C4">
-          <dmn:text>true</dmn:text>
-        </dmn:outputEntry>
-        <dmn:annotationEntry>
-          <dmn:text/>
-        </dmn:annotationEntry>
-      </dmn:rule>
-      <dmn:rule id="_57CA9F51-3355-4443-B25A-B45D882D6D0C">
-        <dmn:inputEntry id="_001E194F-29E1-4854-9A17-EA9FDA44D2E0">
-          <dmn:text>"ID-BA"</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_B28ACAD0-A63F-4E97-9396-6761EB2D2CB9">
-          <dmn:text>"Province"</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_5FAB4BB9-892F-4A1B-B25F-A70E93E557D8">
-          <dmn:text>not(null)</dmn:text>
-        </dmn:inputEntry>
-        <dmn:outputEntry id="_613AE8A1-B6A2-48A8-9FAA-110DCD80454A">
-          <dmn:text>true</dmn:text>
-        </dmn:outputEntry>
-        <dmn:annotationEntry>
-          <dmn:text/>
-        </dmn:annotationEntry>
-      </dmn:rule>
-      <dmn:rule id="_C77FF63E-1FCF-494C-B4DD-753C51516FB1">
-        <dmn:inputEntry id="_072B96DD-51FC-4040-9B04-3065FB9FD357">
-          <dmn:text>"ID-KI"</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_F029748C-A043-45EF-B339-FDDFF8120A5C">
-          <dmn:text>"Province"</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_B24545B2-E0A6-4BEE-9657-EF359C25F88A">
-          <dmn:text>not(null)</dmn:text>
-        </dmn:inputEntry>
-        <dmn:outputEntry id="_CFDA3C6D-DCAE-4D92-8AF5-A89AF7E57190">
-          <dmn:text>true</dmn:text>
-        </dmn:outputEntry>
-        <dmn:annotationEntry>
-          <dmn:text/>
-        </dmn:annotationEntry>
-      </dmn:rule>
-      <dmn:rule id="_73742D93-927D-42FD-AFFF-EE932FAA8E95">
-        <dmn:inputEntry id="_8525FA5F-57C5-4620-A2A8-200A86DAF532">
-          <dmn:text>"ID-YO"</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_6586A951-6A68-4C89-88F6-8A71E738139F">
-          <dmn:text>"Province"</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_380AF888-1EA0-4E18-840D-1E360285A22A">
-          <dmn:text>not(null)</dmn:text>
-        </dmn:inputEntry>
-        <dmn:outputEntry id="_F8216BDA-A861-40B4-AD3D-2BC1D0446F00">
-          <dmn:text>true</dmn:text>
-        </dmn:outputEntry>
-        <dmn:annotationEntry>
-          <dmn:text/>
-        </dmn:annotationEntry>
-      </dmn:rule>
-      <dmn:rule id="_FCEC3F6B-F8CC-4935-AF24-A6974248A59B">
-        <dmn:inputEntry id="_E74446DC-7922-4340-B92B-E4F23497559A">
-          <dmn:text>"ID-SU"</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_AD614C1C-D8A1-4012-8544-DF8B7273ABA0">
-          <dmn:text>"Province"</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_6BE4255E-310A-42C3-BBA0-4448A1B13514">
-          <dmn:text>not(null)</dmn:text>
-        </dmn:inputEntry>
-        <dmn:outputEntry id="_2B7AEFE6-6DA6-41EC-8314-2C3F2664EC1D">
-          <dmn:text>true</dmn:text>
-        </dmn:outputEntry>
-        <dmn:annotationEntry>
-          <dmn:text/>
-        </dmn:annotationEntry>
-      </dmn:rule>
-      <dmn:rule id="_A263B5A0-B107-4C34-8043-A5FAA6998192">
-        <dmn:inputEntry id="_B6AF94F7-E59A-4C06-A748-8D5A38167ED8">
-          <dmn:text>"ID-JI"</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_B84108E4-8FFC-4B2D-9319-1A3D1815C78D">
-          <dmn:text>"Province"</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_6A514B32-7FF0-42FA-AFB2-3DA1C43CF6F3">
-          <dmn:text>not(null)</dmn:text>
-        </dmn:inputEntry>
-        <dmn:outputEntry id="_1FC818BA-4E15-4CC0-914B-DC0C02DB6B83">
-          <dmn:text>true</dmn:text>
-        </dmn:outputEntry>
-        <dmn:annotationEntry>
-          <dmn:text/>
-        </dmn:annotationEntry>
-      </dmn:rule>
-      <dmn:rule id="_D6075D8D-B528-41DD-BEFE-F22F9F47D4B3">
-        <dmn:inputEntry id="_FC5FDF90-BD4C-4831-B2B5-C985D8BC6ECA">
-          <dmn:text>"ID-KR"</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_D5AB9451-E178-4675-A0B0-7F6B4C251449">
-          <dmn:text>"Province"</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_C249F68C-4030-4129-8453-02DC6F69B350">
-          <dmn:text>not(null)</dmn:text>
-        </dmn:inputEntry>
-        <dmn:outputEntry id="_3D0494B6-1867-42AB-8CBA-CA9C218E291E">
-          <dmn:text>true</dmn:text>
-        </dmn:outputEntry>
-        <dmn:annotationEntry>
-          <dmn:text/>
-        </dmn:annotationEntry>
-      </dmn:rule>
-      <dmn:rule id="_B1899361-8BF2-4B58-9263-2F7C37DFD75D">
-        <dmn:inputEntry id="_EEBC2F56-C716-4144-ADBC-86A97781FC00">
-          <dmn:text>"ID-SN"</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_9F8738A4-B95E-4FB2-AF88-16A62F0DB087">
-          <dmn:text>"Province"</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_063C0078-AA07-4E54-9426-32740307D99A">
-          <dmn:text>not(null)</dmn:text>
-        </dmn:inputEntry>
-        <dmn:outputEntry id="_C0E14944-90E9-4454-A929-74E65E701066">
-          <dmn:text>true</dmn:text>
-        </dmn:outputEntry>
-        <dmn:annotationEntry>
-          <dmn:text/>
-        </dmn:annotationEntry>
-      </dmn:rule>
-      <dmn:rule id="_B216162C-A281-4797-B29C-E395C6F35277">
-        <dmn:inputEntry id="_0712E3D1-5ED9-47C2-A691-A1A71778992A">
-          <dmn:text>"ID-JA"</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_ABB86A38-0D80-4E2E-BA43-C282922F53EF">
-          <dmn:text>"Province"</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_5BBD02F2-74C6-468F-8230-52DB9DCC4FEB">
-          <dmn:text>not(null)</dmn:text>
-        </dmn:inputEntry>
-        <dmn:outputEntry id="_AAB4F0CE-4D6D-4D97-AEEE-EC35EB49730C">
-          <dmn:text>true</dmn:text>
-        </dmn:outputEntry>
-        <dmn:annotationEntry>
-          <dmn:text/>
-        </dmn:annotationEntry>
-      </dmn:rule>
-      <dmn:rule id="_82AD791F-D577-4712-81E9-2A3BEF840096">
-        <dmn:inputEntry id="_A8368705-5919-4C1B-8EE5-F3528C584A9C">
-          <dmn:text>"ID-MA"</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_5632F026-5F01-4D14-87F2-65B6B5348E1E">
-          <dmn:text>"Province"</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_47F28551-82D8-42D8-8C84-6CF872966A8A">
-          <dmn:text>not(null)</dmn:text>
-        </dmn:inputEntry>
-        <dmn:outputEntry id="_A23E3C9E-0B90-45C5-9550-9044780CE954">
-          <dmn:text>true</dmn:text>
-        </dmn:outputEntry>
-        <dmn:annotationEntry>
-          <dmn:text/>
-        </dmn:annotationEntry>
-      </dmn:rule>
-      <dmn:rule id="_0749F189-6767-463E-A78E-20073E943FD5">
-        <dmn:inputEntry id="_A66966D4-E96D-48DF-A99C-C245A20C4C8D">
-          <dmn:text>"ID-PA"</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_5BB6A2C7-1268-438A-9FB2-298341259B41">
-          <dmn:text>"Province"</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_61426B08-9032-4C59-B9CB-6A96EC2DBA36">
-          <dmn:text>not(null)</dmn:text>
-        </dmn:inputEntry>
-        <dmn:outputEntry id="_B538CBB9-A1F0-4AAC-B8E6-1CA1C2E792B9">
-          <dmn:text>true</dmn:text>
-        </dmn:outputEntry>
-        <dmn:annotationEntry>
-          <dmn:text/>
-        </dmn:annotationEntry>
-      </dmn:rule>
-      <dmn:rule id="_31DEC83E-153E-4FD2-9FD4-F257994EDAF9">
-        <dmn:inputEntry id="_4E33D3E0-AC03-4870-A949-7E7FF0E3CBCC">
-          <dmn:text>"ID-MU"</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_B998EC84-27D6-4E30-9C41-09CDB30DDBB7">
-          <dmn:text>"Province"</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_EC06CAF2-09D9-4EC4-AF42-D01AEF8DA5CC">
-          <dmn:text>not(null)</dmn:text>
-        </dmn:inputEntry>
-        <dmn:outputEntry id="_7655BF67-6D84-4D66-8449-D85B61AF7C46">
-          <dmn:text>true</dmn:text>
-        </dmn:outputEntry>
-        <dmn:annotationEntry>
-          <dmn:text/>
-        </dmn:annotationEntry>
-      </dmn:rule>
-      <dmn:rule id="_5D4B380F-D6B7-42D8-9559-76DD7454F5BC">
-        <dmn:inputEntry id="_02D1C2BF-3B1C-4F2C-ACCD-7F791A56D1ED">
-          <dmn:text>"ID-SS"</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_5E136DF8-DE35-41C4-AF3D-C5E983C89ECC">
-          <dmn:text>"Province"</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_BCF5AFD2-C5CC-430D-A822-BBC931FDE768">
-          <dmn:text>not(null)</dmn:text>
-        </dmn:inputEntry>
-        <dmn:outputEntry id="_E8E681B1-A7E3-4A9D-8CEF-E903C44CE91F">
-          <dmn:text>true</dmn:text>
-        </dmn:outputEntry>
-        <dmn:annotationEntry>
-          <dmn:text/>
-        </dmn:annotationEntry>
-      </dmn:rule>
-      <dmn:rule id="_82025D0C-B2D0-4F4A-B123-C2ADD0384015">
-        <dmn:inputEntry id="_9C76DC7A-26D4-4EC8-9A14-BA61636B1646">
-          <dmn:text>"ID-AC"</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_CECC54B1-EE2D-4D2B-9547-BB1EA7D36046">
-          <dmn:text>"Province"</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_032BECB6-A407-4334-8E94-C396B2FDFA16">
-          <dmn:text>not(null)</dmn:text>
-        </dmn:inputEntry>
-        <dmn:outputEntry id="_C628313F-5FE5-4D95-900F-3CE915996897">
-          <dmn:text>true</dmn:text>
-        </dmn:outputEntry>
-        <dmn:annotationEntry>
-          <dmn:text/>
-        </dmn:annotationEntry>
-      </dmn:rule>
-      <dmn:rule id="_4E38F667-19D1-4BFA-A8C5-2DFCD6A353F7">
-        <dmn:inputEntry id="_F9DF1F6E-447E-47A4-A8BE-A33A0B9F7588">
-          <dmn:text>"ID-KT"</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_C4F5EDCD-8FEA-4F55-AC90-F25A257F25AA">
-          <dmn:text>"Province"</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_6AB0D61A-6BB7-40E1-A499-D370B61C50DD">
-          <dmn:text>not(null)</dmn:text>
-        </dmn:inputEntry>
-        <dmn:outputEntry id="_322B09B0-698C-439D-8309-DA972FCB19F4">
-          <dmn:text>true</dmn:text>
-        </dmn:outputEntry>
-        <dmn:annotationEntry>
-          <dmn:text/>
-        </dmn:annotationEntry>
-      </dmn:rule>
-      <dmn:rule id="_5230BAAA-E487-4130-9C85-BE42C721C3FE">
-        <dmn:inputEntry id="_7E92E295-BAAC-4E2A-8417-7BC2E60FB140">
-          <dmn:text>"ID-LA"</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_2406A5EF-F669-4B67-AD31-7264EF434301">
-          <dmn:text>"Province"</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_3DEFB8AC-A64B-47F0-B744-6B9E27832CB4">
-          <dmn:text>not(null)</dmn:text>
-        </dmn:inputEntry>
-        <dmn:outputEntry id="_E309E274-2204-41C8-93BE-441D0A6FCDF0">
-          <dmn:text>true</dmn:text>
-        </dmn:outputEntry>
-        <dmn:annotationEntry>
-          <dmn:text/>
-        </dmn:annotationEntry>
-      </dmn:rule>
-      <dmn:rule id="_A54339DA-1BD8-408C-BFF4-9B7CF871725E">
-        <dmn:inputEntry id="_ED6C8965-42C5-4138-BDBC-FAE72D1A9561">
-          <dmn:text>"ID-ST"</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_BF84DB74-FFB6-46D1-9749-03BB18A7F862">
-          <dmn:text>"Province"</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_95983FAC-15FF-4111-9260-57ACC28687E8">
-          <dmn:text>not(null)</dmn:text>
-        </dmn:inputEntry>
-        <dmn:outputEntry id="_0EB91977-7098-470C-A4A9-BEF2B2506327">
-          <dmn:text>true</dmn:text>
-        </dmn:outputEntry>
-        <dmn:annotationEntry>
-          <dmn:text/>
-        </dmn:annotationEntry>
-      </dmn:rule>
-      <dmn:rule id="_50A2A44C-3888-4B78-92EA-A2209B045AB1">
-        <dmn:inputEntry id="_6871FF44-6F73-49AF-A399-751B75064155">
-          <dmn:text>"ID-SA"</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_A8653E41-2FD8-4618-B34F-A661A76B53B3">
-          <dmn:text>"Province"</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_0E56CCD1-3E57-45D9-A49B-15A149A4B364">
-          <dmn:text>not(null)</dmn:text>
-        </dmn:inputEntry>
-        <dmn:outputEntry id="_30CCB524-DED0-483C-B451-EB01C45AB8D6">
-          <dmn:text>true</dmn:text>
-        </dmn:outputEntry>
-        <dmn:annotationEntry>
-          <dmn:text/>
-        </dmn:annotationEntry>
-      </dmn:rule>
-      <dmn:rule id="_40075480-0617-4C37-B921-9483AA61DE3D">
-        <dmn:inputEntry id="_1445E33B-AF53-4337-85EF-882657F1BFF9">
-          <dmn:text>"ID-SB"</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_1A1F5DAB-67F1-4FD1-9765-F9959770AA0A">
-          <dmn:text>"Province"</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_EB13A582-9AAE-4DB2-9777-75C37202AF88">
-          <dmn:text>not(null)</dmn:text>
-        </dmn:inputEntry>
-        <dmn:outputEntry id="_2E866123-497A-48A5-A721-168932280FD7">
-          <dmn:text>true</dmn:text>
-        </dmn:outputEntry>
-        <dmn:annotationEntry>
-          <dmn:text/>
-        </dmn:annotationEntry>
-      </dmn:rule>
-      <dmn:rule id="_B5A05010-C512-4461-9D18-BA3F41A67EB3">
-        <dmn:inputEntry id="_FD4FDE1F-3BFB-4816-9F72-EEFE9E8845C2">
-          <dmn:text>"ID-PB"</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_6DD54A4D-5818-4B5E-8D7B-4B3FC9E7A395">
-          <dmn:text>"Province"</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_988BEA00-C3FC-4CE9-B047-DF6E81F25E9A">
-          <dmn:text>not(null)</dmn:text>
-        </dmn:inputEntry>
-        <dmn:outputEntry id="_1C8D3D47-DCA6-4126-B9BC-8E9617454A6C">
-          <dmn:text>true</dmn:text>
-        </dmn:outputEntry>
-        <dmn:annotationEntry>
-          <dmn:text/>
-        </dmn:annotationEntry>
-      </dmn:rule>
-      <dmn:rule id="_80A8401C-2054-4DBE-AA3A-F471748C9BA6">
-        <dmn:inputEntry id="_A3BEAEA1-B071-4F1C-86F9-080E2F56F4CC">
-          <dmn:text>"ID-KU"</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_31846113-8CCE-4BA0-AFB6-B8D0CBB2D187">
-          <dmn:text>"Province"</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_632C7604-F905-4E7B-A175-93B2065FFDF8">
-          <dmn:text>not(null)</dmn:text>
-        </dmn:inputEntry>
-        <dmn:outputEntry id="_28961872-CC8C-41D9-8204-7D29EFCA524F">
-          <dmn:text>true</dmn:text>
-        </dmn:outputEntry>
-        <dmn:annotationEntry>
-          <dmn:text/>
-        </dmn:annotationEntry>
-      </dmn:rule>
-      <dmn:rule id="_566058C1-9F26-4819-B144-17CEC0FD0D8D">
-        <dmn:inputEntry id="_AE8D2699-6761-47B4-BF3D-506F58F0310A">
-          <dmn:text>"ID-SR"</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_349A8A77-760E-4D9C-8FC6-D82C76689E77">
-          <dmn:text>"Province"</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_DF763F6E-DDCF-4C5C-90E2-1E451DA48908">
-          <dmn:text>not(null)</dmn:text>
-        </dmn:inputEntry>
-        <dmn:outputEntry id="_7C604D6A-F27E-4D74-9CE8-4F9063BE0915">
-          <dmn:text>true</dmn:text>
-        </dmn:outputEntry>
-        <dmn:annotationEntry>
-          <dmn:text/>
-        </dmn:annotationEntry>
-      </dmn:rule>
-      <dmn:rule id="_71159362-CF45-4EFD-B7CE-DC4D82573411">
-        <dmn:inputEntry id="_E4F31B28-8CB1-4A29-9875-352C3189C65D">
-          <dmn:text>"ID-KB"</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_697DFA4A-12D0-4EBB-B010-7E0D21F11B61">
-          <dmn:text>"Province"</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_53DCAA94-7BF5-4847-A004-1E902CFC82F3">
-          <dmn:text>not(null)</dmn:text>
-        </dmn:inputEntry>
-        <dmn:outputEntry id="_637BEC6F-7DB0-4EA8-9555-D5104D09DD6D">
-          <dmn:text>true</dmn:text>
-        </dmn:outputEntry>
-        <dmn:annotationEntry>
-          <dmn:text/>
-        </dmn:annotationEntry>
-      </dmn:rule>
-      <dmn:rule id="_BC972846-6DD9-427A-B58A-83B32E55983E">
-        <dmn:inputEntry id="_C7439CB1-EFCA-4776-815D-9AE3C8A1B14F">
-          <dmn:text>"ID-KS"</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_3944520A-155A-4795-8B76-B74AD4BC485C">
-          <dmn:text>"Province"</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_41F4E06C-23EF-49C8-99CB-0D3098985D30">
-          <dmn:text>not(null)</dmn:text>
-        </dmn:inputEntry>
-        <dmn:outputEntry id="_6A5A9E6D-9C6F-45CD-BD2D-FBA783F3D67A">
-          <dmn:text>true</dmn:text>
-        </dmn:outputEntry>
-        <dmn:annotationEntry>
-          <dmn:text/>
-        </dmn:annotationEntry>
-      </dmn:rule>
-      <dmn:rule id="_52B6D770-ECA1-40F6-9C29-110F21D94542">
-        <dmn:inputEntry id="_6837089D-D127-4E0F-980C-4FBD6F53774B">
-          <dmn:text>"ID-BB"</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_A439BDB8-7390-4E7E-B1FE-244F52D86B49">
-          <dmn:text>"Province"</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_E52EA5D0-B40A-4178-BBF8-F3A1449B80CD">
-          <dmn:text>not(null)</dmn:text>
-        </dmn:inputEntry>
-        <dmn:outputEntry id="_E0BBE377-0180-48AD-8688-4AD6302AF22B">
-          <dmn:text>true</dmn:text>
-        </dmn:outputEntry>
-        <dmn:annotationEntry>
-          <dmn:text/>
-        </dmn:annotationEntry>
-      </dmn:rule>
-      <dmn:rule id="_6F82A989-A8E6-4C62-9FCC-CB5E19200116">
-        <dmn:inputEntry id="_626AE643-F89B-4CD5-A9BA-A0D09ED43340">
-          <dmn:text>"ID-BE"</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_1685ADC1-0247-4192-AB89-7B8677C9919B">
-          <dmn:text>"Province"</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_8B3F24C6-0313-4C44-A079-2849E61DEC93">
-          <dmn:text>not(null)</dmn:text>
-        </dmn:inputEntry>
-        <dmn:outputEntry id="_0741924E-40E2-4489-927B-510D70D5525F">
-          <dmn:text>true</dmn:text>
-        </dmn:outputEntry>
-        <dmn:annotationEntry>
-          <dmn:text/>
-        </dmn:annotationEntry>
-      </dmn:rule>
-      <dmn:rule id="_12A9FBA6-A847-40AC-B97E-240564EA6687">
-        <dmn:inputEntry id="_5CCB86FF-2CCE-4300-A6DD-5ECB2A714FA8">
-          <dmn:text>"ID-NB"</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_78F26B61-79EF-4F4C-B497-FFEBA7B39E13">
-          <dmn:text>"Province"</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_E8406B25-341C-4A74-82B4-6C06A7494ADD">
-          <dmn:text>not(null)</dmn:text>
-        </dmn:inputEntry>
-        <dmn:outputEntry id="_0E1DA788-38EC-4A4F-B4C9-BC4D178DA4A3">
-          <dmn:text>true</dmn:text>
-        </dmn:outputEntry>
-        <dmn:annotationEntry>
-          <dmn:text/>
-        </dmn:annotationEntry>
-      </dmn:rule>
-      <dmn:rule id="_86ADCA07-A7C8-4A13-8037-D7CFB5F97E83">
-        <dmn:inputEntry id="_17C56378-E42D-49E9-A0CC-09AACEC3231D">
-          <dmn:text>"ID-NT"</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_273F9ECC-4869-4BC3-AE96-863D279F6E0A">
-          <dmn:text>"Province"</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_AE665BEA-77D5-40B6-8C94-D468F2B966FF">
-          <dmn:text>not(null)</dmn:text>
-        </dmn:inputEntry>
-        <dmn:outputEntry id="_43FA5679-1401-4A0C-B46F-3F9F63899550">
-          <dmn:text>true</dmn:text>
-        </dmn:outputEntry>
-        <dmn:annotationEntry>
-          <dmn:text/>
-        </dmn:annotationEntry>
-      </dmn:rule>
-      <dmn:rule id="_11806C52-5A54-4419-8F5D-6F5C00916AAB">
-        <dmn:inputEntry id="_9CE5387F-1170-4F8E-9F38-80F5CAD53B9F">
-          <dmn:text>"ID-GO"</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_35BB1A71-5DFF-43B4-8BF4-6F8648708BD2">
-          <dmn:text>"Province"</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_AD1679EF-07F1-49B4-B3FB-BAD3A7D0E7DD">
-          <dmn:text>not(null)</dmn:text>
-        </dmn:inputEntry>
-        <dmn:outputEntry id="_81330317-E9C5-4D33-AD66-680BAF1362E4">
-          <dmn:text>true</dmn:text>
-        </dmn:outputEntry>
-        <dmn:annotationEntry>
-          <dmn:text/>
-        </dmn:annotationEntry>
-      </dmn:rule>
-      <dmn:rule id="_55AFA621-2A18-4AC7-962B-884DAEFF9C1E">
-        <dmn:inputEntry id="_B583A523-1FBA-4890-B99D-5E9498E8E45A">
-          <dmn:text>"ID-JK"</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_2AFA2398-71C0-44FF-91AA-AE8BB8E255EC">
-          <dmn:text>"Province"</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_08A7805D-1471-4980-BC9F-FAFD05ABD3D9">
-          <dmn:text>null</dmn:text>
-        </dmn:inputEntry>
-        <dmn:outputEntry id="_C2A07FF2-D076-4B86-9AB6-1ECFAB27D0E3">
           <dmn:text>true</dmn:text>
         </dmn:outputEntry>
         <dmn:annotationEntry>
@@ -5998,9 +5691,6 @@
           <dmn:text>-</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_A666813A-7EBF-4DBB-AB1F-692D2E01188C">
-          <dmn:text>-</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_9F624682-41BE-4113-A889-7D0415797CD7">
           <dmn:text>-</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_2AE3EE34-7597-44C8-961E-EF0827849B30">
@@ -6058,345 +5748,348 @@
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_69743F3D-6DAB-4083-A886-E01B1D528329">
             <kie:width>50</kie:width>
-            <kie:width>317</kie:width>
-            <kie:width>222</kie:width>
-            <kie:width>460</kie:width>
+            <kie:width>142</kie:width>
+            <kie:width>198</kie:width>
+            <kie:width>126</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_A13DE080-0E8E-4078-88AD-B3EE8A090995">
             <kie:width>50</kie:width>
-            <kie:width>317</kie:width>
-            <kie:width>222</kie:width>
-            <kie:width>460</kie:width>
+            <kie:width>110</kie:width>
+            <kie:width>189</kie:width>
+            <kie:width>102</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_A959151D-6A16-4A88-BC08-1B532A2084CF">
             <kie:width>50</kie:width>
-            <kie:width>317</kie:width>
-            <kie:width>222</kie:width>
-            <kie:width>460</kie:width>
+            <kie:width>100</kie:width>
+            <kie:width>151</kie:width>
+            <kie:width>107</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_12577EFC-CA32-4674-9FA2-3786FFF8BB92">
             <kie:width>50</kie:width>
-            <kie:width>317</kie:width>
-            <kie:width>222</kie:width>
-            <kie:width>460</kie:width>
+            <kie:width>100</kie:width>
+            <kie:width>153</kie:width>
+            <kie:width>115</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_A2203564-849A-4569-8502-361C7BEF4909">
             <kie:width>50</kie:width>
-            <kie:width>317</kie:width>
-            <kie:width>222</kie:width>
-            <kie:width>460</kie:width>
+            <kie:width>128</kie:width>
+            <kie:width>175</kie:width>
+            <kie:width>102</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_D71107B5-E1E2-4653-94A9-70013A87600B">
             <kie:width>50</kie:width>
-            <kie:width>317</kie:width>
-            <kie:width>222</kie:width>
-            <kie:width>460</kie:width>
+            <kie:width>100</kie:width>
+            <kie:width>167</kie:width>
+            <kie:width>114</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_A48B51C7-C556-4449-AEF1-67D6EB3A119A">
             <kie:width>50</kie:width>
-            <kie:width>317</kie:width>
-            <kie:width>222</kie:width>
-            <kie:width>460</kie:width>
+            <kie:width>109</kie:width>
+            <kie:width>174</kie:width>
+            <kie:width>134</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_8C2900A3-79BB-4B5D-BD9F-724F5BC74B03">
             <kie:width>50</kie:width>
-            <kie:width>317</kie:width>
-            <kie:width>222</kie:width>
-            <kie:width>460</kie:width>
+            <kie:width>114</kie:width>
+            <kie:width>180</kie:width>
+            <kie:width>116</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_8D2EE24C-8F3C-4EBA-869D-2EA27849EB23">
             <kie:width>50</kie:width>
-            <kie:width>317</kie:width>
-            <kie:width>222</kie:width>
-            <kie:width>460</kie:width>
+            <kie:width>100</kie:width>
+            <kie:width>148</kie:width>
+            <kie:width>100</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_A2E4FCAE-5A43-4567-80D7-8B6B63D2493F">
             <kie:width>50</kie:width>
             <kie:width>100</kie:width>
             <kie:width>100</kie:width>
-            <kie:width>222</kie:width>
+            <kie:width>151</kie:width>
             <kie:width>100</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_4AE02B55-994A-4126-B16E-1C4AF6A3BF4E">
             <kie:width>50</kie:width>
-            <kie:width>317</kie:width>
-            <kie:width>222</kie:width>
-            <kie:width>460</kie:width>
+            <kie:width>100</kie:width>
+            <kie:width>165</kie:width>
+            <kie:width>114</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_F8D5FF97-2D09-4E2D-9B40-03C112A4E726">
             <kie:width>50</kie:width>
-            <kie:width>317</kie:width>
-            <kie:width>174</kie:width>
+            <kie:width>146</kie:width>
+            <kie:width>121</kie:width>
             <kie:width>222</kie:width>
-            <kie:width>460</kie:width>
+            <kie:width>101</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_4A5FDFD3-5A0A-4969-8AE8-7A8828D8A8DF">
             <kie:width>50</kie:width>
-            <kie:width>317</kie:width>
-            <kie:width>222</kie:width>
-            <kie:width>460</kie:width>
+            <kie:width>126</kie:width>
+            <kie:width>182</kie:width>
+            <kie:width>109</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_2314132D-BD49-4B6F-AEA9-9473016A1713">
             <kie:width>50</kie:width>
-            <kie:width>317</kie:width>
-            <kie:width>222</kie:width>
-            <kie:width>460</kie:width>
+            <kie:width>111</kie:width>
+            <kie:width>141</kie:width>
+            <kie:width>168</kie:width>
+            <kie:width>103</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_8F21365F-CF19-4E67-B8F3-C87151054EC7">
             <kie:width>50</kie:width>
-            <kie:width>317</kie:width>
-            <kie:width>222</kie:width>
-            <kie:width>460</kie:width>
+            <kie:width>115</kie:width>
+            <kie:width>188</kie:width>
+            <kie:width>107</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_C5CC30E4-88B0-40E2-BECB-EC2DC91AF3E1">
             <kie:width>50</kie:width>
-            <kie:width>317</kie:width>
-            <kie:width>222</kie:width>
-            <kie:width>460</kie:width>
+            <kie:width>153</kie:width>
+            <kie:width>135</kie:width>
+            <kie:width>208</kie:width>
+            <kie:width>104</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_A7EE8835-D6A0-48A4-8940-D975422E7F5D">
             <kie:width>50</kie:width>
-            <kie:width>317</kie:width>
-            <kie:width>222</kie:width>
-            <kie:width>460</kie:width>
+            <kie:width>100</kie:width>
+            <kie:width>135</kie:width>
+            <kie:width>100</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_252515B7-90FC-4C44-AA3E-BE0ACFF55F9F">
             <kie:width>50</kie:width>
             <kie:width>100</kie:width>
             <kie:width>100</kie:width>
-            <kie:width>222</kie:width>
+            <kie:width>146</kie:width>
             <kie:width>100</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_A037E473-D3FB-4322-8A0B-0216230F280D">
             <kie:width>50</kie:width>
-            <kie:width>317</kie:width>
-            <kie:width>222</kie:width>
-            <kie:width>460</kie:width>
+            <kie:width>107</kie:width>
+            <kie:width>165</kie:width>
+            <kie:width>100</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_39F2FD7E-45C9-4293-94E2-98E986C65042">
             <kie:width>50</kie:width>
-            <kie:width>317</kie:width>
-            <kie:width>222</kie:width>
-            <kie:width>460</kie:width>
+            <kie:width>143</kie:width>
+            <kie:width>205</kie:width>
+            <kie:width>104</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_377101EF-BB28-4AF7-91F6-2A744A60AB37">
             <kie:width>50</kie:width>
-            <kie:width>317</kie:width>
-            <kie:width>222</kie:width>
-            <kie:width>460</kie:width>
+            <kie:width>155</kie:width>
+            <kie:width>210</kie:width>
+            <kie:width>100</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_7581BE33-962E-4922-850E-D6DBC84A36A7">
             <kie:width>50</kie:width>
-            <kie:width>317</kie:width>
+            <kie:width>164</kie:width>
             <kie:width>222</kie:width>
-            <kie:width>460</kie:width>
+            <kie:width>102</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_02399144-7909-4D64-BC46-16514E408D23">
             <kie:width>50</kie:width>
-            <kie:width>317</kie:width>
+            <kie:width>172</kie:width>
             <kie:width>222</kie:width>
-            <kie:width>460</kie:width>
+            <kie:width>109</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_A1286388-2CFC-48CC-913E-646226BAA7FF">
             <kie:width>50</kie:width>
-            <kie:width>317</kie:width>
-            <kie:width>222</kie:width>
-            <kie:width>460</kie:width>
+            <kie:width>176</kie:width>
+            <kie:width>247</kie:width>
+            <kie:width>102</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_679A9BE6-C439-4AD6-A9E8-3B3377766733">
             <kie:width>50</kie:width>
-            <kie:width>175</kie:width>
-            <kie:width>220</kie:width>
-            <kie:width>189</kie:width>
-            <kie:width>199</kie:width>
-            <kie:width>208</kie:width>
-            <kie:width>203</kie:width>
+            <kie:width>126</kie:width>
+            <kie:width>200</kie:width>
+            <kie:width>171</kie:width>
+            <kie:width>153</kie:width>
+            <kie:width>154</kie:width>
+            <kie:width>184</kie:width>
+            <kie:width>164</kie:width>
+            <kie:width>167</kie:width>
+            <kie:width>184</kie:width>
+            <kie:width>156</kie:width>
+            <kie:width>144</kie:width>
+            <kie:width>188</kie:width>
+            <kie:width>177</kie:width>
             <kie:width>195</kie:width>
             <kie:width>210</kie:width>
-            <kie:width>215</kie:width>
-            <kie:width>190</kie:width>
-            <kie:width>192</kie:width>
-            <kie:width>203</kie:width>
-            <kie:width>177</kie:width>
-            <kie:width>210</kie:width>
-            <kie:width>237</kie:width>
-            <kie:width>249</kie:width>
+            <kie:width>206</kie:width>
             <kie:width>207</kie:width>
+            <kie:width>212</kie:width>
+            <kie:width>231</kie:width>
+            <kie:width>214</kie:width>
             <kie:width>227</kie:width>
-            <kie:width>250</kie:width>
-            <kie:width>287</kie:width>
-            <kie:width>258</kie:width>
-            <kie:width>183</kie:width>
-            <kie:width>172</kie:width>
-            <kie:width>233</kie:width>
-            <kie:width>242</kie:width>
+            <kie:width>138</kie:width>
+            <kie:width>140</kie:width>
+            <kie:width>144</kie:width>
+            <kie:width>165</kie:width>
             <kie:width>191</kie:width>
             <kie:width>100</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_336FCEC4-D776-4578-BD2D-0F107E83A794">
             <kie:width>50</kie:width>
-            <kie:width>560</kie:width>
-            <kie:width>168</kie:width>
-            <kie:width>285</kie:width>
-            <kie:width>290</kie:width>
-            <kie:width>296</kie:width>
+            <kie:width>650</kie:width>
+            <kie:width>143</kie:width>
+            <kie:width>194</kie:width>
+            <kie:width>207</kie:width>
+            <kie:width>198</kie:width>
             <kie:width>100</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_2B3C5BE3-1FE5-4D5B-94D7-CFC6CBAC01FC">
             <kie:width>50</kie:width>
-            <kie:width>505</kie:width>
-            <kie:width>100</kie:width>
-            <kie:width>310</kie:width>
-            <kie:width>460</kie:width>
+            <kie:width>441</kie:width>
+            <kie:width>224</kie:width>
+            <kie:width>109</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_B25C5CEA-FB3E-4290-BA1A-EC493DBD030C">
             <kie:width>50</kie:width>
-            <kie:width>354</kie:width>
-            <kie:width>222</kie:width>
-            <kie:width>460</kie:width>
+            <kie:width>338</kie:width>
+            <kie:width>157</kie:width>
+            <kie:width>114</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_F9092711-9C75-42C9-96B4-C7E715203182">
             <kie:width>50</kie:width>
-            <kie:width>317</kie:width>
-            <kie:width>222</kie:width>
-            <kie:width>460</kie:width>
+            <kie:width>279</kie:width>
+            <kie:width>132</kie:width>
+            <kie:width>117</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_44D7C3AD-80FE-402B-B75A-AA1A70915417">
             <kie:width>50</kie:width>
-            <kie:width>317</kie:width>
-            <kie:width>222</kie:width>
-            <kie:width>460</kie:width>
+            <kie:width>278</kie:width>
+            <kie:width>147</kie:width>
+            <kie:width>117</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_C69C2BF8-E34B-4A7E-9CBD-201732382049">
             <kie:width>50</kie:width>
-            <kie:width>317</kie:width>
-            <kie:width>222</kie:width>
-            <kie:width>460</kie:width>
+            <kie:width>276</kie:width>
+            <kie:width>144</kie:width>
+            <kie:width>118</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_022E767C-A911-43B8-B5BA-9CCD00F0DD94">
             <kie:width>50</kie:width>
-            <kie:width>317</kie:width>
-            <kie:width>222</kie:width>
-            <kie:width>460</kie:width>
+            <kie:width>280</kie:width>
+            <kie:width>142</kie:width>
+            <kie:width>145</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_F1C05563-BE79-4C1C-A837-E5DFB25F89DB">
             <kie:width>50</kie:width>
-            <kie:width>317</kie:width>
-            <kie:width>222</kie:width>
-            <kie:width>460</kie:width>
+            <kie:width>280</kie:width>
+            <kie:width>139</kie:width>
+            <kie:width>111</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_1D4FF94F-F10C-4B2C-8360-DB3C7A885EA3">
             <kie:width>50</kie:width>
-            <kie:width>317</kie:width>
-            <kie:width>222</kie:width>
-            <kie:width>460</kie:width>
+            <kie:width>279</kie:width>
+            <kie:width>164</kie:width>
+            <kie:width>118</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_605604ED-BC88-487B-A6BB-7E1D5D045941">
             <kie:width>50</kie:width>
-            <kie:width>317</kie:width>
-            <kie:width>222</kie:width>
-            <kie:width>460</kie:width>
+            <kie:width>111</kie:width>
+            <kie:width>126</kie:width>
+            <kie:width>100</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_D98275AD-A20D-4982-8FD1-0E7B30463FE0">
             <kie:width>50</kie:width>
-            <kie:width>851</kie:width>
+            <kie:width>631</kie:width>
+            <kie:width>129</kie:width>
+            <kie:width>118</kie:width>
             <kie:width>100</kie:width>
-            <kie:width>222</kie:width>
-            <kie:width>977</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_79644509-CDDF-4A51-9106-6300BC60E5B0">
             <kie:width>50</kie:width>
-            <kie:width>317</kie:width>
-            <kie:width>222</kie:width>
-            <kie:width>460</kie:width>
+            <kie:width>100</kie:width>
+            <kie:width>128</kie:width>
+            <kie:width>108</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_6B6A9171-16B7-4933-A6A4-2EA1675E5CD6">
             <kie:width>50</kie:width>
-            <kie:width>317</kie:width>
-            <kie:width>150</kie:width>
-            <kie:width>222</kie:width>
-            <kie:width>460</kie:width>
+            <kie:width>283</kie:width>
+            <kie:width>123</kie:width>
+            <kie:width>187</kie:width>
+            <kie:width>100</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_C773B48C-CD83-445B-A63C-8C9FFBDEF58D">
             <kie:width>50</kie:width>
-            <kie:width>317</kie:width>
-            <kie:width>222</kie:width>
-            <kie:width>460</kie:width>
+            <kie:width>276</kie:width>
+            <kie:width>155</kie:width>
+            <kie:width>100</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_A3FF3031-7631-4DE5-92E4-02E1E8DE9F21">
             <kie:width>50</kie:width>
-            <kie:width>317</kie:width>
-            <kie:width>222</kie:width>
-            <kie:width>460</kie:width>
+            <kie:width>277</kie:width>
+            <kie:width>142</kie:width>
+            <kie:width>144</kie:width>
+            <kie:width>101</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_0437C538-7554-4A18-8302-D580DB15F939">
             <kie:width>50</kie:width>
-            <kie:width>317</kie:width>
-            <kie:width>222</kie:width>
-            <kie:width>460</kie:width>
+            <kie:width>275</kie:width>
+            <kie:width>162</kie:width>
+            <kie:width>104</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_F2BBE706-2D72-4515-B603-9266A085D82A">
             <kie:width>50</kie:width>
-            <kie:width>317</kie:width>
-            <kie:width>222</kie:width>
-            <kie:width>460</kie:width>
+            <kie:width>278</kie:width>
+            <kie:width>146</kie:width>
+            <kie:width>184</kie:width>
+            <kie:width>104</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_9647596C-05B6-42B6-976D-2EBF40B28777">
             <kie:width>50</kie:width>
-            <kie:width>317</kie:width>
-            <kie:width>222</kie:width>
-            <kie:width>460</kie:width>
+            <kie:width>276</kie:width>
+            <kie:width>112</kie:width>
+            <kie:width>101</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_6ED059AC-51F9-4DAC-A53C-A8C8C7EB4A1A">
             <kie:width>50</kie:width>
-            <kie:width>388</kie:width>
-            <kie:width>100</kie:width>
-            <kie:width>222</kie:width>
+            <kie:width>288</kie:width>
+            <kie:width>106</kie:width>
+            <kie:width>103</kie:width>
             <kie:width>100</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_D65F5993-4C88-4F86-89B2-70854B0F93B2">
             <kie:width>50</kie:width>
-            <kie:width>317</kie:width>
-            <kie:width>222</kie:width>
-            <kie:width>460</kie:width>
+            <kie:width>280</kie:width>
+            <kie:width>136</kie:width>
+            <kie:width>101</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_03D7714E-7A6F-4E2F-91CB-51AE1E8FECDC">
             <kie:width>50</kie:width>
-            <kie:width>357</kie:width>
-            <kie:width>272</kie:width>
-            <kie:width>460</kie:width>
+            <kie:width>342</kie:width>
+            <kie:width>172</kie:width>
+            <kie:width>105</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_07329878-49A7-4D14-9869-179CC7321B24">
             <kie:width>50</kie:width>
-            <kie:width>350</kie:width>
-            <kie:width>222</kie:width>
-            <kie:width>460</kie:width>
+            <kie:width>338</kie:width>
+            <kie:width>172</kie:width>
+            <kie:width>109</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_ABFE2254-BE8B-4877-896D-22D60D8B6B40">
             <kie:width>50</kie:width>
             <kie:width>349</kie:width>
-            <kie:width>271</kie:width>
-            <kie:width>460</kie:width>
+            <kie:width>167</kie:width>
+            <kie:width>121</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_6927EEB1-A9BE-4686-8F6B-472BADE912BB">
             <kie:width>50</kie:width>
             <kie:width>337</kie:width>
-            <kie:width>222</kie:width>
-            <kie:width>460</kie:width>
+            <kie:width>167</kie:width>
+            <kie:width>100</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_CF10BFF5-D806-407E-8C41-498DAB1D8A9D">
             <kie:width>50</kie:width>
             <kie:width>354</kie:width>
-            <kie:width>222</kie:width>
-            <kie:width>460</kie:width>
+            <kie:width>168</kie:width>
+            <kie:width>111</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_A51D638A-62A5-4C11-A774-A6AE7150A08B">
             <kie:width>50</kie:width>
             <kie:width>256</kie:width>
-            <kie:width>306</kie:width>
-            <kie:width>312</kie:width>
+            <kie:width>224</kie:width>
+            <kie:width>173</kie:width>
             <kie:width>138</kie:width>
-            <kie:width>299</kie:width>
+            <kie:width>451</kie:width>
             <kie:width>100</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_0007A3BA-6412-45AB-81AC-E137943910EC">
@@ -6431,91 +6124,95 @@
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_1FCEA44A-515F-4B73-8441-613DA5E3011D">
             <kie:width>50</kie:width>
-            <kie:width>301</kie:width>
-            <kie:width>519</kie:width>
-            <kie:width>512</kie:width>
+            <kie:width>188</kie:width>
+            <kie:width>187</kie:width>
+            <kie:width>296</kie:width>
             <kie:width>100</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_35547556-80FB-4562-B631-D5A9DE65554C">
             <kie:width>50</kie:width>
-            <kie:width>301</kie:width>
-            <kie:width>519</kie:width>
-            <kie:width>512</kie:width>
+            <kie:width>186</kie:width>
+            <kie:width>187</kie:width>
+            <kie:width>299</kie:width>
             <kie:width>100</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_4FE9A8F4-C344-4D9A-950E-BE462D3E472A">
             <kie:width>50</kie:width>
-            <kie:width>301</kie:width>
-            <kie:width>519</kie:width>
-            <kie:width>512</kie:width>
+            <kie:width>188</kie:width>
+            <kie:width>183</kie:width>
+            <kie:width>324</kie:width>
             <kie:width>100</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_4E17790B-54BC-45C3-95D3-B76743B483AD">
             <kie:width>50</kie:width>
-            <kie:width>301</kie:width>
-            <kie:width>519</kie:width>
-            <kie:width>512</kie:width>
+            <kie:width>182</kie:width>
+            <kie:width>182</kie:width>
+            <kie:width>182</kie:width>
+            <kie:width>165</kie:width>
+            <kie:width>597</kie:width>
             <kie:width>100</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_73732BB5-5749-4935-AEBF-E4178C5F7DE8">
             <kie:width>50</kie:width>
-            <kie:width>301</kie:width>
-            <kie:width>519</kie:width>
-            <kie:width>512</kie:width>
+            <kie:width>251</kie:width>
+            <kie:width>186</kie:width>
+            <kie:width>185</kie:width>
+            <kie:width>187</kie:width>
+            <kie:width>636</kie:width>
             <kie:width>100</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_0D50A712-403E-4622-9252-B4D376C024E6">
             <kie:width>50</kie:width>
-            <kie:width>133</kie:width>
+            <kie:width>187</kie:width>
             <kie:width>185</kie:width>
-            <kie:width>226</kie:width>
-            <kie:width>996</kie:width>
-            <kie:width>252</kie:width>
+            <kie:width>182</kie:width>
+            <kie:width>987</kie:width>
+            <kie:width>292</kie:width>
             <kie:width>100</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_CD0C1048-E568-41D8-AAE0-FA6594A0F4DB">
             <kie:width>50</kie:width>
-            <kie:width>100</kie:width>
+            <kie:width>187</kie:width>
             <kie:width>185</kie:width>
-            <kie:width>226</kie:width>
-            <kie:width>996</kie:width>
-            <kie:width>252</kie:width>
+            <kie:width>186</kie:width>
+            <kie:width>1060</kie:width>
+            <kie:width>370</kie:width>
             <kie:width>100</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_91821554-4255-422B-85FB-317D8AFB05D6">
             <kie:width>50</kie:width>
-            <kie:width>287</kie:width>
+            <kie:width>184</kie:width>
             <kie:width>185</kie:width>
             <kie:width>226</kie:width>
-            <kie:width>996</kie:width>
+            <kie:width>1048</kie:width>
             <kie:width>252</kie:width>
             <kie:width>100</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_5F919603-4B04-4FFF-9E11-4C1694070578">
             <kie:width>50</kie:width>
-            <kie:width>287</kie:width>
+            <kie:width>186</kie:width>
             <kie:width>185</kie:width>
             <kie:width>226</kie:width>
-            <kie:width>996</kie:width>
-            <kie:width>252</kie:width>
+            <kie:width>1080</kie:width>
+            <kie:width>375</kie:width>
             <kie:width>100</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_FBE4A5B0-9EE8-4A03-9C7C-A8D4CE8B37AA">
             <kie:width>50</kie:width>
-            <kie:width>287</kie:width>
+            <kie:width>183</kie:width>
             <kie:width>185</kie:width>
             <kie:width>226</kie:width>
-            <kie:width>996</kie:width>
-            <kie:width>252</kie:width>
+            <kie:width>1063</kie:width>
+            <kie:width>388</kie:width>
             <kie:width>100</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_90EB2218-81BD-46E8-9B2F-678BF0AFC56F">
             <kie:width>50</kie:width>
+            <kie:width>231</kie:width>
             <kie:width>197</kie:width>
             <kie:width>204</kie:width>
             <kie:width>219</kie:width>
-            <kie:width>270</kie:width>
-            <kie:width>244</kie:width>
+            <kie:width>280</kie:width>
             <kie:width>319</kie:width>
             <kie:width>391</kie:width>
             <kie:width>350</kie:width>
@@ -6527,10 +6224,9 @@
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_B90D0677-EF65-4475-8673-B6B62EE72350">
             <kie:width>50</kie:width>
-            <kie:width>100</kie:width>
-            <kie:width>100</kie:width>
-            <kie:width>195</kie:width>
-            <kie:width>100</kie:width>
+            <kie:width>449</kie:width>
+            <kie:width>114</kie:width>
+            <kie:width>259</kie:width>
             <kie:width>100</kie:width>
           </kie:ComponentWidths>
         </kie:ComponentsWidthsExtension>
@@ -6757,7 +6453,7 @@
           <dmndi:StrokeColor red="0" green="0" blue="0"/>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
-        <dc:Bounds x="2416.5" y="2521" width="207" height="50"/>
+        <dc:Bounds x="2417" y="2521" width="207" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-drg-_997FB363-5A22-4E8B-A24D-1228326DC513" dmnElementRef="_997FB363-5A22-4E8B-A24D-1228326DC513" isCollapsed="false">
@@ -6766,7 +6462,7 @@
           <dmndi:StrokeColor red="0" green="0" blue="0"/>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
-        <dc:Bounds x="2236.5" y="2526" width="149" height="50"/>
+        <dc:Bounds x="2237.5" y="2525" width="149" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-drg-_9281E5D7-08DF-42DC-AEDF-F9193880F3DC" dmnElementRef="_9281E5D7-08DF-42DC-AEDF-F9193880F3DC" isCollapsed="false">
@@ -7018,7 +6714,7 @@
           <dmndi:StrokeColor red="0" green="0" blue="0"/>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
-        <dc:Bounds x="5993" y="2539" width="242" height="50"/>
+        <dc:Bounds x="5994" y="2539" width="242" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-drg-_CF3023EF-0A69-4E32-8CED-CAB663AD7F53" dmnElementRef="_CF3023EF-0A69-4E32-8CED-CAB663AD7F53" isCollapsed="false">
@@ -7207,7 +6903,7 @@
           <dmndi:StrokeColor red="0" green="0" blue="0"/>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
-        <dc:Bounds x="9741" y="2539" width="149" height="50"/>
+        <dc:Bounds x="9742" y="2539" width="149" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-drg-_3B3E736B-ECDD-4421-BF6E-C9238BA8D0C2" dmnElementRef="_3B3E736B-ECDD-4421-BF6E-C9238BA8D0C2" isCollapsed="false">
@@ -7306,7 +7002,7 @@
           <dmndi:StrokeColor red="0" green="0" blue="0"/>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
-        <dc:Bounds x="14093" y="2548" width="241.25" height="50"/>
+        <dc:Bounds x="14094" y="2548" width="241.25" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-drg-_30DE2114-C5F5-455A-B58F-4E5F62C86D2C" dmnElementRef="_30DE2114-C5F5-455A-B58F-4E5F62C86D2C" isCollapsed="false">
@@ -7324,7 +7020,7 @@
           <dmndi:StrokeColor red="0" green="0" blue="0"/>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
-        <dc:Bounds x="14721" y="2553" width="324.82142857142844" height="50"/>
+        <dc:Bounds x="14717" y="2548" width="324.82142857142844" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-drg-_819F9BE4-C857-4EAA-897A-336494410F55" dmnElementRef="_819F9BE4-C857-4EAA-897A-336494410F55" isCollapsed="false">
@@ -7342,7 +7038,7 @@
           <dmndi:StrokeColor red="0" green="0" blue="0"/>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
-        <dc:Bounds x="15456" y="2548" width="324.82142857142844" height="50"/>
+        <dc:Bounds x="15457" y="2548" width="324.82142857142844" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-drg-_5FB992CA-7048-43D7-9348-0D7150213D16" dmnElementRef="_5FB992CA-7048-43D7-9348-0D7150213D16" isCollapsed="false">
@@ -7360,7 +7056,7 @@
           <dmndi:StrokeColor red="0" green="0" blue="0"/>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
-        <dc:Bounds x="16275" y="2548" width="324.82142857142844" height="50"/>
+        <dc:Bounds x="16276" y="2548" width="324.82142857142844" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-drg-_1380F973-C0A6-42BA-B2C6-3ACBDF6E9BA4" dmnElementRef="_1380F973-C0A6-42BA-B2C6-3ACBDF6E9BA4" isCollapsed="false">
@@ -7457,15 +7153,15 @@
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_A102855F-7E37-4BFF-BD11-5110516FAA5D-AUTO-TARGET" dmnElementRef="_A102855F-7E37-4BFF-BD11-5110516FAA5D">
         <di:waypoint x="9053.287776799065" y="4784"/>
-        <di:waypoint x="2520" y="2571"/>
+        <di:waypoint x="2520.5" y="2571"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_BD102717-CFBD-4120-828E-4BD610A18D51" dmnElementRef="_BD102717-CFBD-4120-828E-4BD610A18D51">
         <di:waypoint x="8689.065420560748" y="4784"/>
-        <di:waypoint x="2311" y="2576"/>
+        <di:waypoint x="2312" y="2575"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_4DE7E6AE-3AB9-4225-9B5B-6304B00A46BA-AUTO-TARGET" dmnElementRef="_4DE7E6AE-3AB9-4225-9B5B-6304B00A46BA">
         <di:waypoint x="8882" y="4784"/>
-        <di:waypoint x="2311" y="2576"/>
+        <di:waypoint x="2312" y="2575"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_B63DF611-D01F-4061-B0C4-E739EE576D89" dmnElementRef="_B63DF611-D01F-4061-B0C4-E739EE576D89">
         <di:waypoint x="9217.065420560748" y="4784"/>
@@ -7487,12 +7183,20 @@
         <di:waypoint x="9941.032710280375" y="4784"/>
         <di:waypoint x="3451.5" y="2575"/>
       </dmndi:DMNEdge>
+      <dmndi:DMNEdge id="dmnedge-drg-_63F009BC-5712-4528-B8FC-8DC62F2B2D23" dmnElementRef="_63F009BC-5712-4528-B8FC-8DC62F2B2D23">
+        <di:waypoint x="7451.065420560748" y="4801"/>
+        <di:waypoint x="3451.5" y="2575"/>
+      </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_684A6DF8-FFA6-4919-8F58-8ABE553FBBEE" dmnElementRef="_684A6DF8-FFA6-4919-8F58-8ABE553FBBEE">
         <di:waypoint x="10114.032710280375" y="4784"/>
         <di:waypoint x="3689.5" y="2575"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_7E494795-E74D-459F-B5A3-0DA7A66C48B9-AUTO-TARGET" dmnElementRef="_7E494795-E74D-459F-B5A3-0DA7A66C48B9">
         <di:waypoint x="10332.032710280375" y="4784"/>
+        <di:waypoint x="3931.5" y="2575"/>
+      </dmndi:DMNEdge>
+      <dmndi:DMNEdge id="dmnedge-drg-_5FCFBAFE-A53C-44E1-AC82-EDA348F3FEFE-AUTO-TARGET" dmnElementRef="_5FCFBAFE-A53C-44E1-AC82-EDA348F3FEFE">
+        <di:waypoint x="7451.065420560748" y="4801"/>
         <di:waypoint x="3931.5" y="2575"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_B7EF492D-2959-4CE4-A33D-C213B7E9D6C0" dmnElementRef="_B7EF492D-2959-4CE4-A33D-C213B7E9D6C0">
@@ -7529,7 +7233,7 @@
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_31D536B5-CA3D-46B9-8626-F19124D7CBFB" dmnElementRef="_31D536B5-CA3D-46B9-8626-F19124D7CBFB">
         <di:waypoint x="12512.5" y="4832"/>
-        <di:waypoint x="6114" y="2589"/>
+        <di:waypoint x="6115" y="2589"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_37568D07-2671-47B7-B3A0-96886E907376-AUTO-TARGET" dmnElementRef="_37568D07-2671-47B7-B3A0-96886E907376">
         <di:waypoint x="224.5" y="2546"/>
@@ -7568,7 +7272,7 @@
         <di:waypoint x="3505.39727869134" y="1946"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_38BBFA2B-127A-42CD-8213-E289DFE91424" dmnElementRef="_38BBFA2B-127A-42CD-8213-E289DFE91424">
-        <di:waypoint x="2311" y="2551"/>
+        <di:waypoint x="2312" y="2550"/>
         <di:waypoint x="3505.39727869134" y="1946"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_B3552A9F-585E-415D-BECC-7DEF9CC9C3A0" dmnElementRef="_B3552A9F-585E-415D-BECC-7DEF9CC9C3A0">
@@ -7600,7 +7304,7 @@
         <di:waypoint x="3505.39727869134" y="1946"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_5226E9A2-7995-4D07-86CA-1E24020D34EB" dmnElementRef="_5226E9A2-7995-4D07-86CA-1E24020D34EB">
-        <di:waypoint x="2520" y="2546"/>
+        <di:waypoint x="2520.5" y="2546"/>
         <di:waypoint x="3505.39727869134" y="1946"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_38B9B82D-A6B1-4DB9-B22E-5A761D1A58F8" dmnElementRef="_38B9B82D-A6B1-4DB9-B22E-5A761D1A58F8">
@@ -7628,7 +7332,7 @@
         <di:waypoint x="3505.39727869134" y="1946"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_A497423E-23A9-46A5-BD09-6EF56B95139A" dmnElementRef="_A497423E-23A9-46A5-BD09-6EF56B95139A">
-        <di:waypoint x="6114" y="2564"/>
+        <di:waypoint x="6115" y="2564"/>
         <di:waypoint x="3505.39727869134" y="1946"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_08DC9133-9302-4C3F-80B4-548D973F72AC-AUTO-TARGET" dmnElementRef="_08DC9133-9302-4C3F-80B4-548D973F72AC">
@@ -7637,10 +7341,6 @@
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_80DDB6B4-631A-483E-98F6-D1794EE0E6F2-AUTO-TARGET" dmnElementRef="_80DDB6B4-631A-483E-98F6-D1794EE0E6F2">
         <di:waypoint x="7451.065420560748" y="4801"/>
-        <di:waypoint x="7266.5" y="2584"/>
-      </dmndi:DMNEdge>
-      <dmndi:DMNEdge id="dmnedge-drg-_C1751C6F-1E9B-43D7-8D3E-2D272FB90B62-AUTO-TARGET" dmnElementRef="_C1751C6F-1E9B-43D7-8D3E-2D272FB90B62">
-        <di:waypoint x="8689.065420560748" y="4784"/>
         <di:waypoint x="7266.5" y="2584"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_BD40B008-44B6-41C0-A50E-911A602BDC17" dmnElementRef="_BD40B008-44B6-41C0-A50E-911A602BDC17">
@@ -7703,6 +7403,10 @@
         <di:waypoint x="9941.032710280375" y="4784"/>
         <di:waypoint x="10287.5" y="2589"/>
       </dmndi:DMNEdge>
+      <dmndi:DMNEdge id="dmnedge-drg-_2D000DE6-3D22-41B0-8451-C6251C8DCC2F-AUTO-TARGET" dmnElementRef="_2D000DE6-3D22-41B0-8451-C6251C8DCC2F">
+        <di:waypoint x="7451.065420560748" y="4801"/>
+        <di:waypoint x="10287.5" y="2589"/>
+      </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_21650A77-BB88-4B47-B18F-52061DA7EFC4" dmnElementRef="_21650A77-BB88-4B47-B18F-52061DA7EFC4">
         <di:waypoint x="10114.032710280375" y="4784"/>
         <di:waypoint x="10529.5" y="2564"/>
@@ -7711,17 +7415,21 @@
         <di:waypoint x="10332.032710280375" y="4784"/>
         <di:waypoint x="10770.5" y="2589"/>
       </dmndi:DMNEdge>
+      <dmndi:DMNEdge id="dmnedge-drg-_6FE45313-622D-4DB2-98CF-62B27EBBD535-AUTO-TARGET" dmnElementRef="_6FE45313-622D-4DB2-98CF-62B27EBBD535">
+        <di:waypoint x="7451.065420560748" y="4801"/>
+        <di:waypoint x="10770.5" y="2589"/>
+      </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_CECC3643-F28C-49B5-BEE7-F858C451B5EF-AUTO-TARGET" dmnElementRef="_CECC3643-F28C-49B5-BEE7-F858C451B5EF">
         <di:waypoint x="10802.065420560748" y="4793"/>
         <di:waypoint x="11271.5" y="2575"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_773BAB8E-E353-4998-93F7-E459EF0E9203" dmnElementRef="_773BAB8E-E353-4998-93F7-E459EF0E9203">
         <di:waypoint x="9378.032710280375" y="4784"/>
-        <di:waypoint x="9815.5" y="2589"/>
+        <di:waypoint x="9816.5" y="2589"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_CE126F48-B770-48C7-AEEE-10ACB692CE69" dmnElementRef="_CE126F48-B770-48C7-AEEE-10ACB692CE69">
         <di:waypoint x="8689.065420560748" y="4784"/>
-        <di:waypoint x="9815.5" y="2589"/>
+        <di:waypoint x="9816.5" y="2589"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_DCB7F686-F8A9-4294-8FA9-C625A5E4677B-AUTO-TARGET" dmnElementRef="_DCB7F686-F8A9-4294-8FA9-C625A5E4677B">
         <di:waypoint x="11030" y="4801"/>
@@ -7796,7 +7504,7 @@
         <di:waypoint x="10028.60272130866" y="1864"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_2E6B6DE4-6E75-4DEF-8728-5B852330A113" dmnElementRef="_2E6B6DE4-6E75-4DEF-8728-5B852330A113">
-        <di:waypoint x="9815.5" y="2564"/>
+        <di:waypoint x="9816.5" y="2564"/>
         <di:waypoint x="10028.60272130866" y="1864"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_F67603D4-D1F8-429F-8C00-DF9A6E964A95" dmnElementRef="_F67603D4-D1F8-429F-8C00-DF9A6E964A95">
@@ -7869,11 +7577,11 @@
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_2FFE26B1-A370-4EA1-B9D9-43A7FB52F094" dmnElementRef="_2FFE26B1-A370-4EA1-B9D9-43A7FB52F094">
         <di:waypoint x="8013.032710280374" y="4793"/>
-        <di:waypoint x="14213.625" y="2598"/>
+        <di:waypoint x="14214.625" y="2598"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_5DFE805B-2300-4364-BF9B-B2E51667D97A" dmnElementRef="_5DFE805B-2300-4364-BF9B-B2E51667D97A">
         <di:waypoint x="8507.032710280375" y="4793"/>
-        <di:waypoint x="14213.625" y="2598"/>
+        <di:waypoint x="14214.625" y="2598"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_A763FD98-BA95-4745-BBD3-3FD90BEB8054" dmnElementRef="_A763FD98-BA95-4745-BBD3-3FD90BEB8054">
         <di:waypoint x="9941.032710280375" y="4784"/>
@@ -7883,13 +7591,29 @@
         <di:waypoint x="10114.032710280375" y="4784"/>
         <di:waypoint x="14520" y="2598"/>
       </dmndi:DMNEdge>
+      <dmndi:DMNEdge id="dmnedge-drg-_E078F410-4468-4953-8F80-B0C0B344FB74" dmnElementRef="_E078F410-4468-4953-8F80-B0C0B344FB74">
+        <di:waypoint x="9724.065420560748" y="4784"/>
+        <di:waypoint x="14520" y="2598"/>
+      </dmndi:DMNEdge>
+      <dmndi:DMNEdge id="dmnedge-drg-_CDCF19DD-65E8-465F-BC12-666812DD2C83-AUTO-TARGET" dmnElementRef="_CDCF19DD-65E8-465F-BC12-666812DD2C83">
+        <di:waypoint x="7451.065420560748" y="4801"/>
+        <di:waypoint x="14520" y="2598"/>
+      </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_A726181E-9D15-4269-9B1A-5DFB88E6E55D" dmnElementRef="_A726181E-9D15-4269-9B1A-5DFB88E6E55D">
         <di:waypoint x="10114.032710280375" y="4784"/>
-        <di:waypoint x="14883.410714285714" y="2603"/>
+        <di:waypoint x="14879.410714285714" y="2598"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_B42071AD-72AA-44E6-A80C-B01DEEFE68B4" dmnElementRef="_B42071AD-72AA-44E6-A80C-B01DEEFE68B4">
         <di:waypoint x="10332.032710280375" y="4784"/>
-        <di:waypoint x="14883.410714285714" y="2603"/>
+        <di:waypoint x="14879.410714285714" y="2598"/>
+      </dmndi:DMNEdge>
+      <dmndi:DMNEdge id="dmnedge-drg-_24C619D7-83E9-4FD4-B86D-CC7B2C629CDA" dmnElementRef="_24C619D7-83E9-4FD4-B86D-CC7B2C629CDA">
+        <di:waypoint x="10512" y="4784"/>
+        <di:waypoint x="14879.410714285714" y="2598"/>
+      </dmndi:DMNEdge>
+      <dmndi:DMNEdge id="dmnedge-drg-_C1979EC0-DCE4-4385-97D6-421AF454625F" dmnElementRef="_C1979EC0-DCE4-4385-97D6-421AF454625F">
+        <di:waypoint x="7451.065420560748" y="4801"/>
+        <di:waypoint x="14879.410714285714" y="2598"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_A5A4752C-EC8C-4A6E-9726-5B179704729E" dmnElementRef="_A5A4752C-EC8C-4A6E-9726-5B179704729E">
         <di:waypoint x="10802.065420560748" y="4793"/>
@@ -7905,15 +7629,15 @@
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_BBB6F975-34DD-427B-A0E3-3B2C1DBE30EB" dmnElementRef="_BBB6F975-34DD-427B-A0E3-3B2C1DBE30EB">
         <di:waypoint x="11030" y="4801"/>
-        <di:waypoint x="15618.410714285714" y="2598"/>
+        <di:waypoint x="15619.410714285714" y="2598"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_29B7A8CE-C318-48E4-8359-D81B0961CA1C" dmnElementRef="_29B7A8CE-C318-48E4-8359-D81B0961CA1C">
         <di:waypoint x="11610.80140186916" y="4808"/>
-        <di:waypoint x="15618.410714285714" y="2598"/>
+        <di:waypoint x="15619.410714285714" y="2598"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_9712B514-D102-4A01-9D85-2791C9586486" dmnElementRef="_9712B514-D102-4A01-9D85-2791C9586486">
         <di:waypoint x="7642.032710280374" y="4801"/>
-        <di:waypoint x="15618.410714285714" y="2598"/>
+        <di:waypoint x="15619.410714285714" y="2598"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_1C250247-D969-4A5B-86B9-D25A6798DE66" dmnElementRef="_1C250247-D969-4A5B-86B9-D25A6798DE66">
         <di:waypoint x="8196.032710280373" y="4793"/>
@@ -7929,15 +7653,15 @@
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_381441BB-F903-43B4-8D7D-F2703621DB5E" dmnElementRef="_381441BB-F903-43B4-8D7D-F2703621DB5E">
         <di:waypoint x="7822.065420560748" y="4801"/>
-        <di:waypoint x="16437.410714285714" y="2598"/>
+        <di:waypoint x="16438.410714285714" y="2598"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_FCB97704-AF28-43B2-8C6F-0E385AEEB0A4" dmnElementRef="_FCB97704-AF28-43B2-8C6F-0E385AEEB0A4">
         <di:waypoint x="11030" y="4801"/>
-        <di:waypoint x="16437.410714285714" y="2598"/>
+        <di:waypoint x="16438.410714285714" y="2598"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_F3F4EB7D-078A-4BB9-8AF2-D995B3B608C8-AUTO-TARGET" dmnElementRef="_F3F4EB7D-078A-4BB9-8AF2-D995B3B608C8">
         <di:waypoint x="12190.5" y="4824"/>
-        <di:waypoint x="16437.410714285714" y="2598"/>
+        <di:waypoint x="16438.410714285714" y="2598"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_0388DB15-CA0C-4FB7-8729-7E0C0EB934B7" dmnElementRef="_0388DB15-CA0C-4FB7-8729-7E0C0EB934B7">
         <di:waypoint x="8358.032710280375" y="4793"/>
@@ -7960,7 +7684,7 @@
         <di:waypoint x="15235" y="1897"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_5E1BD2DF-826E-4CB8-87B8-C561ABC73084" dmnElementRef="_5E1BD2DF-826E-4CB8-87B8-C561ABC73084">
-        <di:waypoint x="14213.625" y="2573"/>
+        <di:waypoint x="14214.625" y="2573"/>
         <di:waypoint x="15235" y="1897"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_39B92B19-5028-4ED9-9F18-8EB15B30A2BE" dmnElementRef="_39B92B19-5028-4ED9-9F18-8EB15B30A2BE">
@@ -7968,7 +7692,7 @@
         <di:waypoint x="15235" y="1897"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_268A9FAF-F9AB-42A7-B14F-64CE85384301" dmnElementRef="_268A9FAF-F9AB-42A7-B14F-64CE85384301">
-        <di:waypoint x="14883.410714285714" y="2578"/>
+        <di:waypoint x="14879.410714285714" y="2573"/>
         <di:waypoint x="15235" y="1897"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_4953AE4D-62D1-43C0-A05C-DA4DA67B53D7" dmnElementRef="_4953AE4D-62D1-43C0-A05C-DA4DA67B53D7">
@@ -7976,7 +7700,7 @@
         <di:waypoint x="15235" y="1897"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_33135C75-9C5E-42B8-AC6A-5D6D264EFFA6" dmnElementRef="_33135C75-9C5E-42B8-AC6A-5D6D264EFFA6">
-        <di:waypoint x="15618.410714285714" y="2573"/>
+        <di:waypoint x="15619.410714285714" y="2573"/>
         <di:waypoint x="15235" y="1897"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_B498FD51-AF56-4852-950E-A724BA02EE1E" dmnElementRef="_B498FD51-AF56-4852-950E-A724BA02EE1E">
@@ -7984,7 +7708,7 @@
         <di:waypoint x="15235" y="1897"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_24374AC1-43A7-4168-A596-4160B7FD851D" dmnElementRef="_24374AC1-43A7-4168-A596-4160B7FD851D">
-        <di:waypoint x="16437.410714285714" y="2573"/>
+        <di:waypoint x="16438.410714285714" y="2573"/>
         <di:waypoint x="15235" y="1897"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_C32DDBCC-A0CD-4484-814F-9AE41E971679" dmnElementRef="_C32DDBCC-A0CD-4484-814F-9AE41E971679">
@@ -8001,10 +7725,6 @@
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_1D086910-FE93-44B0-8530-804E0C0DFA09-AUTO-TARGET" dmnElementRef="_1D086910-FE93-44B0-8530-804E0C0DFA09">
         <di:waypoint x="8689.065420560748" y="4784"/>
-        <di:waypoint x="17185.5" y="2598"/>
-      </dmndi:DMNEdge>
-      <dmndi:DMNEdge id="dmnedge-drg-_BB6A6B8C-8F7D-40C8-A776-54E3EBD42011-AUTO-TARGET" dmnElementRef="_BB6A6B8C-8F7D-40C8-A776-54E3EBD42011">
-        <di:waypoint x="10512" y="4784"/>
         <di:waypoint x="17185.5" y="2598"/>
       </dmndi:DMNEdge>
     </dmndi:DMNDiagram>

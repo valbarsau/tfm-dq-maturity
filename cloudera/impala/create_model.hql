@@ -3,11 +3,11 @@ CREATE DATABASE dq_maturity;
 
 
 
-DROP TABLE DQ_MATURITY.DATASET_COVID_INDONESIA_SOURCE;
-CREATE EXTERNAL TABLE DQ_MATURITY.DATASET_COVID_INDONESIA_SOURCE (
+DROP TABLE dq_maturity.dataset_covid_indonesia_source;
+CREATE EXTERNAL TABLE dq_maturity.dataset_covid_indonesia_source (
     date_ STRING,
     location_iso_code STRING,
-    location STRING,
+    location_ STRING,
     new_cases STRING,
     new_deaths STRING,
     new_recovered STRING,
@@ -46,12 +46,12 @@ CREATE EXTERNAL TABLE DQ_MATURITY.DATASET_COVID_INDONESIA_SOURCE (
 )
 ROW FORMAT DELIMITED FIELDS TERMINATED BY ";"
 LOCATION '/user/hive/source'
-TBLPROPERTIES ("auto.purge"="true", "skip.header.line.count"="1");
+TBLPROPERTIES('serialization.null.format'='');
 
 
 
-DROP TABLE DQ_MATURITY.DATASET_COVID_INDONESIA_DMN;
-CREATE EXTERNAL TABLE DQ_MATURITY.DATASET_COVID_INDONESIA_DMN (
+DROP TABLE DQ_MATURITY.dataset_covid_indonesia_dmn;
+CREATE EXTERNAL TABLE DQ_MATURITY.dataset_covid_indonesia_dmn (
     date_ STRING,
     location_iso_code STRING,
     new_cases STRING,
