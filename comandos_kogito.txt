@@ -1,7 +1,0 @@
-https://docs.kogito.kie.org/latest/html_single/#proc-kogito-creating-project_kogito-creating-running
-
-mvn clean compile quarkus:dev  
-curl -X POST http://localhost:8080/adult -H 'Content-Type: application/json'-d '{"age":20}'
-
-$params = @{"age"=20;}
-Invoke-WebRequest -Uri http://localhost:8080/adult -Method POST -Body ($params|ConvertTo-Json) -ContentType "application/json"

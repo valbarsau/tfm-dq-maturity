@@ -1,48 +1,113 @@
+Este es el repositorio de código asociado al TFM de Valentín Barquero Saucí.
 
-**Edit a file, create a new file, and clone from Bitbucket in under 2 minutes**
 
-When you're done, you can delete the content in this README and update the file with details for others getting started with your repository.
 
-*We recommend that you open this README in another tab as you perform the tasks below. You can [watch our video](https://youtu.be/0ocf7u76WSo) for a full demo of all the steps in this tutorial. Open the video in a new tab to avoid leaving Bitbucket.*
+## Despliegue de la infraestructura mediante Docker
+Para constituir desplegar la arquitectura propuesta en el TFM se requiere tener instalado el software Docker.
 
----
+En concreto para este TFM, se ha instalado Docker Desktop sobre Windows.
 
-## Edit a file
+### 1. Creando la red
+En primer lugar, se procede a crear una subred denominada dq-maturity-network que permitirá asignar IPs estáticas a los contenedores. De otro modo, estas direcciones cambiarían con cada arranque de los contenedores.
 
-You’ll start by editing this README file to learn how to edit a file in Bitbucket.
+````
+docker network create --driver=bridge --subnet=172.18.0.0/16 --gateway=172.18.0.1 dq-maturity-network
+````
+### 2. Despligue de Nifi
 
-1. Click **Source** on the left side.
-2. Click the README.md link from the list of files.
-3. Click the **Edit** button.
-4. Delete the following text: *Delete this line to make a change to the README from Bitbucket.*
-5. After making your change, click **Commit** and then **Commit** again in the dialog. The commit page will open and you’ll see the change you just made.
-6. Go back to the **Source** page.
+Se creará la imagen de Nifi a partir del fichero Dockerfile situado en /nifi/docker. A tal fin, se debe lanzar el siguiente comando
+````
+docker build --no-cache -t nifi-image ./nifi/docker
+````
+Para crear el contenedor e instanciar de este modo la imagen anterior, se lanzará el siguiente comando:
+````
+docker run -dit --net dq-maturity-network --ip 172.18.0.3 -p 8443:8443 --name nifi-container nifi-image
+````
+Una vez arrancado el contenedor hay que establecer los credenciales para acceder a Nifi. Si no se hiciese esto,
+habría que revisar los ficheros de logs para ver el user/password generado.
 
----
+Nótese que es preciso sustituir `<user>` y `<password>` por el nombre de user y la password que se desee.
+````
+docker exec -d nifi-container ./nifi.sh set-single-user-credentials <user> <password>
+````
+Posteriormente para arrancar Nifi, lanzaremos el siguiente comando.
 
-## Create a file
+````
+docker exec -d nifi-container ./nifi.sh start
+````
 
-Next, you’ll add a new file to this repository.
+Si el comando de arranque del servicio de Nifi se hace desde la sentencia CMD en el Dockerfile, el contenedor se ejecutará para iniciar Nifi, pero después se apagará. Eso es debido a que no se espera a que el servidor arranque (asíncrono). Para evitar problemas, es mejor arrancar el contenedor y dejarlo en background para a posteriori iniciar el servicio de nifi.
 
-1. Click the **New file** button at the top of the **Source** page.
-2. Give the file a filename of **contributors.txt**.
-3. Enter your name in the empty file space.
-4. Click **Commit** and then **Commit** again in the dialog.
-5. Go back to the **Source** page.
+Se recomienda esperar a que el servidor de Nifi se encuentre completamente cargado, pudiendo tardar en torno a un minuto.
 
-Before you move on, go ahead and explore the repository. You've already seen the **Source** page, but check out the **Commits**, **Branches**, and **Settings** pages.
+### 2. Despligue de Kogito
 
----
+Es preciso situarse en la carpeta raiz del proyecto de la aplicación de Kogito.
 
-## Clone a repository
+````
+cd sample-kogito
+````
+Posteriormente, se construye el fichero JAR de la aplicación mediante el siguiente comando asociado a Maven.
 
-Use these steps to clone from SourceTree, our client for using the repository command-line free. Cloning allows you to work on your files locally. If you don't yet have SourceTree, [download and install first](https://www.sourcetreeapp.com/). If you prefer to clone from the command line, see [Clone a repository](https://confluence.atlassian.com/x/4whODQ).
+````
+./mvnw clean package
+````
 
-1. You’ll see the clone button under the **Source** heading. Click that button.
-2. Now click **Check out in SourceTree**. You may need to create a SourceTree account or log in.
-3. When you see the **Clone New** dialog in SourceTree, update the destination path and name if you’d like to and then click **Clone**.
-4. Open the directory you just created to see your repository’s files.
+Se procede a construir la imagen de Docker a partir de uno de los Dockerfile predefinidos en el arquetipo de la aplicación.
 
-Now that you're more familiar with your Bitbucket repository, go ahead and add a new file locally. You can [push your change back to Bitbucket with SourceTree](https://confluence.atlassian.com/x/iqyBMg), or you can [add, commit,](https://confluence.atlassian.com/x/8QhODQ) and [push from the command line](https://confluence.atlassian.com/x/NQ0zDQ).
-# tfm-dq-maturity
-Este repositorio contiene los fuentes asociados al TFM de Valentín Barquero Saucí
+````
+docker build -f src/main/docker/Dockerfile.jvm -t quarkus/sample-kogito-jvm .
+````
+
+Se realiza el arranque del contenedor kogito-container que desplegará la aplicación de Kogito.
+````
+docker run -dit --net dq-maturity-network --ip 172.18.0.4 -p 8080:8080 --name kogito-container quarkus/sample-kogito-jvm
+````
+
+### 3. Despligue de cloudera/quickstart
+
+Es preciso descargar la imagen mediante el siguiente comando.
+````
+docker pull cloudera/quickstart:latest
+````
+
+Posteriormente, se procede a arrancar el contenedor asociado a la imagen de cloudera/quickstart (denominado cloudera-container).
+````
+docker run --name cloudera-container --hostname=quickstart.cloudera --privileged=true -t -i -d --publish-all=true --net dq-maturity-network --ip 172.18.0.2 -p8888:8888 -p7180:7180 -p21050:21050 -p8022:8022 -p8020:8020 -p50470:50470 -p50070:50070 cloudera/quickstart /usr/bin/docker-quickstart
+````
+
+Nótese que todos los comandos que se han lanzado sobre el daemon de Docker contienen los parámetros de configuración necesarios para permitir la comunicación entre los 3 contenedores, además del acceso desde el host a cualquiera de ellos a través de localhost.
+
+## Directorio de servicios
+
+A continuación, se destacan las distintas direcciones mediante las cuales se habilita el acceso desde la máquina host a los servicios desplegados en los contenedores.
+
+- Acceso a Nifi https://localhost:8443/nifi
+- Swagger UI para interactuar con la API que genera Kogito: http://localhost:8080/q/swagger-ui
+- Hue para acceder a Impala y al sistema de archivos HDFS desde GUI: http://localhost:8888/
+
+## Simulación del caso de estudio
+
+Una vez desplegada la arquitectura y tras haber comprobado que se tiene acceso a los servicios comentados en la anterior sección, es posible realizar la ejecución del pipeline desarrollado.
+
+### 1. Cargar pipeline 
+Cargar en Nifi la plantilla del proceso ETL desarrollado, la cual es /nifi/flow/dq-flow_template_nifi.xml
+
+### 2. Cargar el fichero de datos
+
+Crear la carpeta /input en la ruta /user/hive/ y subir el dataset a HDFS. Ambas cosas se pueden hacer desde Hue.
+
+Esto es, el dataset, que se encuentra en la ruta /dataset de este repositorio, debe cargarse a la ruta /user/hive/input del sistema de archivos de HDFS.
+
+### 3. Ejecutar el proceso
+
+Ejecutar el proceso de Nifi y verificar que los ficheros se han generado en la ruta /user/hive/indonesia_covid19 de HDFS.
+
+### 4. Crear base de datos (esquema de base de datos) y estructura de tabla
+
+Desde Impala (GUI de Hue) lanzar los scripts siguientes, los cuales están disponibles en la ruta /cloudera/impala:
+
+1. create_db_schema.sql
+2. create_dmn_table.sql
+
+Tras esto, se podrán lanzar consultas SQL sobre los datos enriquecidos.
