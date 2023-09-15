@@ -1,5 +1,5 @@
-DROP TABLE DQ_MATURITY.dataset_covid_indonesia_dmn;
-CREATE EXTERNAL TABLE DQ_MATURITY.dataset_covid_indonesia_dmn (
+DROP TABLE IF EXISTS dq_maturity.dataset_covid_indonesia_dmn;
+CREATE EXTERNAL TABLE dq_maturity.dataset_covid_indonesia_dmn (
     date_ STRING,
     location_iso_code STRING,
     new_cases STRING,

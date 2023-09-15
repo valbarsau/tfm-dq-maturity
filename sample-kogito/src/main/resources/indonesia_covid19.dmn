@@ -4902,7 +4902,7 @@
           <dmn:text>? != null and matches(?,"^[1-9][0-9]*$")</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_6801E3D1-DC64-4B08-9938-293759AD89EB">
-          <dmn:text>if (number(Total Districts, ",", ".") &lt;= number(Total Urban Villages, ",", ".") and number(Total Districts, ",", ".") &lt;= number(Total Rural Villages, ",", ".")) then "Higher or equal" else "Lower"</dmn:text>
+          <dmn:text>if (number(Total Districts, ",", ".") &lt;= (number(Total Urban Villages, ",", ".") + number(Total Rural Villages, ",", "."))) then "Higher or equal" else "Lower"</dmn:text>
         </dmn:outputEntry>
         <dmn:annotationEntry>
           <dmn:text/>
@@ -5012,7 +5012,19 @@
           <dmn:text>? != null and matches(?,"^\d+\.\d+$")</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_A26A49A1-79B0-4613-B508-0CB1B31E75F9">
-          <dmn:text>if (round half up(number(Population, ",", ".") / number(Area km2, ",", "."), 2) = number(Population Density, ",", ".")) then "Result matched with 2 decimal places" else if (round half up(number(Population, ",", ".") / number(Area km2, ",", "."), 1) = number(Population Density, ",", ".")) then "Result matched with 1 decimal place" else "Result didn't match"</dmn:text>
+          <dmn:text>if (
+round half up(number(Population, ",", ".") / number(Area km2, ",", "."), 2) = number(Population Density, ",", ".")
+) 
+then "Result matched with 2 decimal places" 
+else if (
+abs(round half up(number(Population, ",", ".") / number(Area km2, ",", "."), 2) - number(Population Density, ",", ".")) &lt;= 0.01
+) 
+then "Result differred only 1 hundredth"
+else if (
+round half up(number(Population, ",", ".") / number(Area km2, ",", "."), 1) = round half up(number(Population Density, ",", "."), 1)
+) 
+then "Result matched when rounding to 1 decimal place"
+else "Result didn't match"</dmn:text>
         </dmn:outputEntry>
         <dmn:outputEntry id="_2CBB6767-0E94-4BAF-B901-482D19FBA068">
           <dmn:text>string(number(Population, ",", ".") / number(Area km2, ",", "."))</dmn:text>
@@ -5085,7 +5097,19 @@
           <dmn:text>? != null and matches(?,"^\d+\.\d+$")</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_99534DF6-1250-43C8-9488-D0709AE5914B">
-          <dmn:text>if (round half up(1000000 * number(New Cases, ",", ".") / number(Population, ",", "."), 2) = number(New Cases per Million, ",", ".")) then "Result matched with 2 decimal places" else if (round half up(1000000 * number(New Cases, ",", ".") / number(Population, ",", "."), 1) = number(New Cases per Million, ",", ".")) then "Result matched with 1 decimal place" else "Result didn't match"</dmn:text>
+          <dmn:text>if (
+round half up(1000000 * number(New Cases, ",", ".") / number(Population, ",", "."), 2) = number(New Cases per Million, ",", ".")
+) 
+then "Result matched with 2 decimal places" 
+else if (
+abs(round half up(1000000 * number(New Cases, ",", ".") / number(Population, ",", "."), 2) - number(New Cases per Million, ",", ".")) &lt;= 0.01
+) 
+then "Result differred only 1 hundredth"
+else if (
+round half up(1000000 * number(New Cases, ",", ".") / number(Population, ",", "."), 1) = round half up(number(New Cases per Million, ",", "."), 1)
+) 
+then "Result matched when rounding to 1 decimal place"
+else "Result didn't match"</dmn:text>
         </dmn:outputEntry>
         <dmn:outputEntry id="_01D9DCBB-68DF-4CAE-8267-501C0D33D151">
           <dmn:text>string(1000000 * number(New Cases, ",", ".") / number(Population, ",", "."))</dmn:text>
@@ -5158,7 +5182,19 @@
           <dmn:text>? != null and matches(?,"^\d+\.\d+$")</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_8478C476-B885-4B27-8E4F-B7DF97EB8A85">
-          <dmn:text>if (round half up(1000000 * number(Total Cases, ",", ".") / number(Population, ",", "."), 2) = number(Total Cases per Million, ",", ".")) then "Result matched with 2 decimal places" else if (round half up(1000000 * number(Total Cases, ",", ".") / number(Population, ",", "."), 1) = number(Total Cases per Million, ",", ".")) then "Result matched with 1 decimal place" else "Result didn't match"</dmn:text>
+          <dmn:text>if (
+round half up(1000000 * number(Total Cases, ",", ".") / number(Population, ",", "."), 2) = number(Total Cases per Million, ",", ".")
+) 
+then "Result matched with 2 decimal places" 
+else if (
+abs(round half up(1000000 * number(Total Cases, ",", ".") / number(Population, ",", "."), 2) - number(Total Cases per Million, ",", ".")) &lt;= 0.01
+) 
+then "Result differred only 1 hundredth"
+else if (
+round half up(1000000 * number(Total Cases, ",", ".") / number(Population, ",", "."), 1) = round half up(number(Total Cases per Million, ",", "."), 1)
+) 
+then "Result matched when rounding to 1 decimal place"
+else "Result didn't match"</dmn:text>
         </dmn:outputEntry>
         <dmn:outputEntry id="_22B85FC7-8F02-46E8-BBBE-288D919DEE64">
           <dmn:text>string(1000000 * number(Total Cases, ",", ".") / number(Population, ",", "."))</dmn:text>
@@ -5231,7 +5267,19 @@
           <dmn:text>? != null and matches(?,"^\d+\.\d+$")</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_C2F71C6E-AB43-452C-BB63-BC8ECDF9BCC3">
-          <dmn:text>if (round half up(1000000 * number(New Deaths, ",", ".") / number(Population, ",", "."), 2) = number(New Deaths per Million, ",", ".")) then "Result matched with 2 decimal places" else if (round half up(1000000 * number(New Deaths, ",", ".") / number(Population, ",", "."), 1) = number(New Deaths per Million, ",", ".")) then "Result matched with 1 decimal place" else "Result didn't match"</dmn:text>
+          <dmn:text>if (
+round half up(1000000 * number(New Deaths, ",", ".") / number(Population, ",", "."), 2) = number(New Deaths per Million, ",", ".")
+) 
+then "Result matched with 2 decimal places" 
+else if (
+abs(round half up(1000000 * number(New Deaths, ",", ".") / number(Population, ",", "."), 2) - number(New Deaths per Million, ",", ".")) &lt;= 0.01
+) 
+then "Result differred only 1 hundredth"
+else if (
+round half up(1000000 * number(New Deaths, ",", ".") / number(Population, ",", "."), 1) = round half up(number(New Deaths per Million, ",", "."), 1)
+) 
+then "Result matched when rounding to 1 decimal place"
+else "Result didn't match"</dmn:text>
         </dmn:outputEntry>
         <dmn:outputEntry id="_1AEC0AB9-46C5-42FB-9297-334FA046B432">
           <dmn:text>string(1000000 * number(New Deaths, ",", ".") / number(Population, ",", "."))</dmn:text>
@@ -5304,7 +5352,19 @@
           <dmn:text>? != null and matches(?,"^\d+\.\d+$")</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_A8187114-3686-4F3B-81CD-AB796C136E4C">
-          <dmn:text>if (round half up(1000000 * number(Total Deaths, ",", ".") / number(Population, ",", "."), 2) = number(Total Deaths per Million, ",", ".")) then "Result matched with 2 decimal places" else if (round half up(1000000 * number(Total Deaths, ",", ".") / number(Population, ",", "."), 1) = number(Total Deaths per Million, ",", ".")) then "Result matched with 1 decimal place" else "Result didn't match"</dmn:text>
+          <dmn:text>if (
+round half up(1000000 * number(Total Deaths, ",", ".") / number(Population, ",", "."), 2) = number(Total Deaths per Million, ",", ".")
+) 
+then "Result matched with 2 decimal places" 
+else if (
+abs(round half up(1000000 * number(Total Deaths, ",", ".") / number(Population, ",", "."), 2) - number(Total Deaths per Million, ",", ".")) &lt;= 0.01
+) 
+then "Result differred only 1 hundredth"
+else if (
+round half up(1000000 * number(Total Deaths, ",", ".") / number(Population, ",", "."), 1) = round half up(number(Total Deaths per Million, ",", "."), 1)
+) 
+then "Result matched when rounding to 1 decimal place"
+else "Result didn't match"</dmn:text>
         </dmn:outputEntry>
         <dmn:outputEntry id="_4D539EC4-D815-4C09-8B6F-29F593DBCF31">
           <dmn:text>string(1000000 * number(Total Deaths, ",", ".") / number(Population, ",", "."))</dmn:text>
@@ -5490,19 +5550,29 @@
           <dmn:text>"Higher or equal"</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_A3802BD3-9AC5-4FE6-8DE3-27567D0EE44C">
-          <dmn:text>"Result matched with 2 decimal places", "Result matched with 1 decimal place"</dmn:text>
+          <dmn:text>"Result matched with 2 decimal places", 
+"Result differred only 1 hundredth", 
+"Result matched when rounding to 1 decimal place"</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_43164277-7785-4B22-ACA1-7037B74F21A8">
-          <dmn:text>"Result matched with 2 decimal places", "Result matched with 1 decimal place"</dmn:text>
+          <dmn:text>"Result matched with 2 decimal places", 
+"Result differred only 1 hundredth", 
+"Result matched when rounding to 1 decimal place"</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_D213ECC6-EA8D-4607-927C-91204B38335A">
-          <dmn:text>"Result matched with 2 decimal places", "Result matched with 1 decimal place"</dmn:text>
+          <dmn:text>"Result matched with 2 decimal places", 
+"Result differred only 1 hundredth", 
+"Result matched when rounding to 1 decimal place"</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_CC802FE7-214F-4E72-AE71-97187D064AF7">
-          <dmn:text>"Result matched with 2 decimal places", "Result matched with 1 decimal place"</dmn:text>
+          <dmn:text>"Result matched with 2 decimal places", 
+"Result differred only 1 hundredth", 
+"Result matched when rounding to 1 decimal place"</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_78284496-840D-4C56-91FB-92A8C3CE66E7">
-          <dmn:text>"Result matched with 2 decimal places", "Result matched with 1 decimal place"</dmn:text>
+          <dmn:text>"Result matched with 2 decimal places", 
+"Result differred only 1 hundredth", 
+"Result matched when rounding to 1 decimal place"</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_C0426B11-82CA-4CFA-8FAC-6313F721972E">
           <dmn:text>"High column relations fulfillment"</dmn:text>
@@ -6158,7 +6228,7 @@
             <kie:width>186</kie:width>
             <kie:width>191</kie:width>
             <kie:width>190</kie:width>
-            <kie:width>636</kie:width>
+            <kie:width>650</kie:width>
             <kie:width>100</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_0D50A712-403E-4622-9252-B4D376C024E6">
@@ -6166,8 +6236,8 @@
             <kie:width>187</kie:width>
             <kie:width>185</kie:width>
             <kie:width>182</kie:width>
-            <kie:width>987</kie:width>
-            <kie:width>292</kie:width>
+            <kie:width>950</kie:width>
+            <kie:width>302</kie:width>
             <kie:width>100</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_CD0C1048-E568-41D8-AAE0-FA6594A0F4DB">
@@ -6184,7 +6254,7 @@
             <kie:width>184</kie:width>
             <kie:width>185</kie:width>
             <kie:width>226</kie:width>
-            <kie:width>1048</kie:width>
+            <kie:width>998</kie:width>
             <kie:width>252</kie:width>
             <kie:width>100</kie:width>
           </kie:ComponentWidths>
@@ -6193,7 +6263,7 @@
             <kie:width>186</kie:width>
             <kie:width>185</kie:width>
             <kie:width>226</kie:width>
-            <kie:width>1080</kie:width>
+            <kie:width>1003</kie:width>
             <kie:width>375</kie:width>
             <kie:width>100</kie:width>
           </kie:ComponentWidths>
@@ -6202,7 +6272,7 @@
             <kie:width>183</kie:width>
             <kie:width>185</kie:width>
             <kie:width>226</kie:width>
-            <kie:width>1063</kie:width>
+            <kie:width>995</kie:width>
             <kie:width>388</kie:width>
             <kie:width>100</kie:width>
           </kie:ComponentWidths>
@@ -6214,11 +6284,11 @@
             <kie:width>194</kie:width>
             <kie:width>280</kie:width>
             <kie:width>233</kie:width>
-            <kie:width>334</kie:width>
-            <kie:width>331</kie:width>
-            <kie:width>326</kie:width>
-            <kie:width>335</kie:width>
-            <kie:width>336</kie:width>
+            <kie:width>342</kie:width>
+            <kie:width>352</kie:width>
+            <kie:width>352</kie:width>
+            <kie:width>354</kie:width>
+            <kie:width>419</kie:width>
             <kie:width>324</kie:width>
             <kie:width>100</kie:width>
           </kie:ComponentWidths>

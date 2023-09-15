@@ -1,2 +1,2 @@
-DROP DATABASE dq_maturity;
+DROP DATABASE IF EXISTS dq_maturity;
 CREATE DATABASE dq_maturity;
