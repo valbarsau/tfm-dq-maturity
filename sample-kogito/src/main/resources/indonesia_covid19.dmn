@@ -5013,11 +5013,11 @@
         </dmn:inputEntry>
         <dmn:outputEntry id="_A26A49A1-79B0-4613-B508-0CB1B31E75F9">
           <dmn:text>if (
-round half up(number(Population, ",", ".") / number(Area km2, ",", "."), 2) = number(Population Density, ",", ".")
+round half up(number(Population, ",", ".") / number(Area km2, ",", "."), 2) = round half up(number(Population Density, ",", "."), 2)
 ) 
 then "Result matched with 2 decimal places" 
 else if (
-abs(round half up(number(Population, ",", ".") / number(Area km2, ",", "."), 2) - number(Population Density, ",", ".")) &lt;= 0.01
+abs(round half up(number(Population, ",", ".") / number(Area km2, ",", "."), 2) - round half up(number(Population Density, ",", "."), 2)) &lt;= 0.01
 ) 
 then "Result differred only 1 hundredth"
 else if (
@@ -5098,11 +5098,11 @@ else "Result didn't match"</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_99534DF6-1250-43C8-9488-D0709AE5914B">
           <dmn:text>if (
-round half up(1000000 * number(New Cases, ",", ".") / number(Population, ",", "."), 2) = number(New Cases per Million, ",", ".")
+round half up(1000000 * number(New Cases, ",", ".") / number(Population, ",", "."), 2) = round half up(number(New Cases per Million, ",", "."), 2)
 ) 
 then "Result matched with 2 decimal places" 
 else if (
-abs(round half up(1000000 * number(New Cases, ",", ".") / number(Population, ",", "."), 2) - number(New Cases per Million, ",", ".")) &lt;= 0.01
+abs(round half up(1000000 * number(New Cases, ",", ".") / number(Population, ",", "."), 1) - round half up(number(New Cases per Million, ",", "."), 2)) &lt;= 0.01
 ) 
 then "Result differred only 1 hundredth"
 else if (
@@ -5183,11 +5183,11 @@ else "Result didn't match"</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_8478C476-B885-4B27-8E4F-B7DF97EB8A85">
           <dmn:text>if (
-round half up(1000000 * number(Total Cases, ",", ".") / number(Population, ",", "."), 2) = number(Total Cases per Million, ",", ".")
+round half up(1000000 * number(Total Cases, ",", ".") / number(Population, ",", "."), 2) = round half up(number(Total Cases per Million, ",", "."), 2)
 ) 
 then "Result matched with 2 decimal places" 
 else if (
-abs(round half up(1000000 * number(Total Cases, ",", ".") / number(Population, ",", "."), 2) - number(Total Cases per Million, ",", ".")) &lt;= 0.01
+abs(round half up(1000000 * number(Total Cases, ",", ".") / number(Population, ",", "."), 1) - round half up(number(Total Cases per Million, ",", "."), 2)) &lt;= 0.01
 ) 
 then "Result differred only 1 hundredth"
 else if (
@@ -5268,11 +5268,11 @@ else "Result didn't match"</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_C2F71C6E-AB43-452C-BB63-BC8ECDF9BCC3">
           <dmn:text>if (
-round half up(1000000 * number(New Deaths, ",", ".") / number(Population, ",", "."), 2) = number(New Deaths per Million, ",", ".")
+round half up(1000000 * number(New Deaths, ",", ".") / number(Population, ",", "."), 2) = round half up(number(New Deaths per Million, ",", "."), 2)
 ) 
 then "Result matched with 2 decimal places" 
 else if (
-abs(round half up(1000000 * number(New Deaths, ",", ".") / number(Population, ",", "."), 2) - number(New Deaths per Million, ",", ".")) &lt;= 0.01
+abs(round half up(1000000 * number(New Deaths, ",", ".") / number(Population, ",", "."), 1) - round half up(number(New Deaths per Million, ",", "."), 2)) &lt;= 0.01
 ) 
 then "Result differred only 1 hundredth"
 else if (
@@ -5353,11 +5353,11 @@ else "Result didn't match"</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_A8187114-3686-4F3B-81CD-AB796C136E4C">
           <dmn:text>if (
-round half up(1000000 * number(Total Deaths, ",", ".") / number(Population, ",", "."), 2) = number(Total Deaths per Million, ",", ".")
+round half up(1000000 * number(Total Deaths, ",", ".") / number(Population, ",", "."), 2) = round half up(number(Total Deaths per Million, ",", "."), 2)
 ) 
 then "Result matched with 2 decimal places" 
 else if (
-abs(round half up(1000000 * number(Total Deaths, ",", ".") / number(Population, ",", "."), 2) - number(Total Deaths per Million, ",", ".")) &lt;= 0.01
+abs(round half up(1000000 * number(Total Deaths, ",", ".") / number(Population, ",", "."), 1) - round half up(number(Total Deaths per Million, ",", "."), 2)) &lt;= 0.01
 ) 
 then "Result differred only 1 hundredth"
 else if (
@@ -6236,7 +6236,7 @@ else "Result didn't match"</dmn:text>
             <kie:width>187</kie:width>
             <kie:width>185</kie:width>
             <kie:width>182</kie:width>
-            <kie:width>950</kie:width>
+            <kie:width>881</kie:width>
             <kie:width>302</kie:width>
             <kie:width>100</kie:width>
           </kie:ComponentWidths>
@@ -6245,7 +6245,7 @@ else "Result didn't match"</dmn:text>
             <kie:width>187</kie:width>
             <kie:width>185</kie:width>
             <kie:width>186</kie:width>
-            <kie:width>1060</kie:width>
+            <kie:width>982</kie:width>
             <kie:width>370</kie:width>
             <kie:width>100</kie:width>
           </kie:ComponentWidths>
@@ -6254,7 +6254,7 @@ else "Result didn't match"</dmn:text>
             <kie:width>184</kie:width>
             <kie:width>185</kie:width>
             <kie:width>226</kie:width>
-            <kie:width>998</kie:width>
+            <kie:width>980</kie:width>
             <kie:width>252</kie:width>
             <kie:width>100</kie:width>
           </kie:ComponentWidths>
@@ -6262,8 +6262,8 @@ else "Result didn't match"</dmn:text>
             <kie:width>50</kie:width>
             <kie:width>186</kie:width>
             <kie:width>185</kie:width>
-            <kie:width>226</kie:width>
-            <kie:width>1003</kie:width>
+            <kie:width>183</kie:width>
+            <kie:width>940</kie:width>
             <kie:width>375</kie:width>
             <kie:width>100</kie:width>
           </kie:ComponentWidths>
@@ -6271,7 +6271,7 @@ else "Result didn't match"</dmn:text>
             <kie:width>50</kie:width>
             <kie:width>183</kie:width>
             <kie:width>185</kie:width>
-            <kie:width>226</kie:width>
+            <kie:width>186</kie:width>
             <kie:width>995</kie:width>
             <kie:width>388</kie:width>
             <kie:width>100</kie:width>
