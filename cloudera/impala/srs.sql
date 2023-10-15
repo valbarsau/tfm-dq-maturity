@@ -33,7 +33,7 @@ SELECT * FROM
                   ) rcpmr_4_freq,
                 SUM (
                       CASE
-                        WHEN rcpmr = 3
+                        WHEN rcpmr >= 3
                           THEN 1
                         ELSE 0
                       END
@@ -74,7 +74,7 @@ JOIN (
                         ) ramr_4_freq,
                       SUM (
                             CASE
-                              WHEN ramr = 3
+                              WHEN ramr >= 3
                                 THEN 1
                               ELSE 0
                             END
@@ -107,7 +107,7 @@ JOIN (
                         ) rcsmr_4_freq,
                       SUM (
                             CASE
-                              WHEN rcsmr = 3
+                              WHEN rcsmr >= 3
                                 THEN 1
                               ELSE 0
                             END
