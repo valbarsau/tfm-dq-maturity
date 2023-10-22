@@ -26,7 +26,7 @@ docker run -dit --net dq-maturity-network --ip 172.18.0.3 -p 8443:8443 --name ni
 Una vez arrancado el contenedor hay que establecer los credenciales para acceder a Nifi. Si no se hiciese esto,
 habría que revisar los ficheros de logs para ver el user/password generado.
 
-Nótese que es preciso sustituir `<user>` y `<password>` por el nombre de user y la password que se desee.
+Nótese que es preciso sustituir `<user>` y `<password>` por el nombre de user y la password que se desee (12 caracteres minimo).
 ````
 docker exec -d nifi-container ./nifi.sh set-single-user-credentials <user> <password>
 ````
