@@ -5102,7 +5102,7 @@ round half up(1000000 * number(New Cases, ",", ".") / number(Population, ",", ".
 ) 
 then "Result matched with 2 decimal places" 
 else if (
-abs(round half up(1000000 * number(New Cases, ",", ".") / number(Population, ",", "."), 1) - round half up(number(New Cases per Million, ",", "."), 2)) &lt;= 0.01
+abs(round half up(1000000 * number(New Cases, ",", ".") / number(Population, ",", "."), 2) - round half up(number(New Cases per Million, ",", "."), 2)) &lt;= 0.01
 ) 
 then "Result differred only 1 hundredth"
 else if (
@@ -5187,7 +5187,7 @@ round half up(1000000 * number(Total Cases, ",", ".") / number(Population, ",", 
 ) 
 then "Result matched with 2 decimal places" 
 else if (
-abs(round half up(1000000 * number(Total Cases, ",", ".") / number(Population, ",", "."), 1) - round half up(number(Total Cases per Million, ",", "."), 2)) &lt;= 0.01
+abs(round half up(1000000 * number(Total Cases, ",", ".") / number(Population, ",", "."), 2) - round half up(number(Total Cases per Million, ",", "."), 2)) &lt;= 0.01
 ) 
 then "Result differred only 1 hundredth"
 else if (
@@ -5272,7 +5272,7 @@ round half up(1000000 * number(New Deaths, ",", ".") / number(Population, ",", "
 ) 
 then "Result matched with 2 decimal places" 
 else if (
-abs(round half up(1000000 * number(New Deaths, ",", ".") / number(Population, ",", "."), 1) - round half up(number(New Deaths per Million, ",", "."), 2)) &lt;= 0.01
+abs(round half up(1000000 * number(New Deaths, ",", ".") / number(Population, ",", "."), 2) - round half up(number(New Deaths per Million, ",", "."), 2)) &lt;= 0.01
 ) 
 then "Result differred only 1 hundredth"
 else if (
@@ -5357,7 +5357,7 @@ round half up(1000000 * number(Total Deaths, ",", ".") / number(Population, ",",
 ) 
 then "Result matched with 2 decimal places" 
 else if (
-abs(round half up(1000000 * number(Total Deaths, ",", ".") / number(Population, ",", "."), 1) - round half up(number(Total Deaths per Million, ",", "."), 2)) &lt;= 0.01
+abs(round half up(1000000 * number(Total Deaths, ",", ".") / number(Population, ",", "."), 2) - round half up(number(Total Deaths per Million, ",", "."), 2)) &lt;= 0.01
 ) 
 then "Result differred only 1 hundredth"
 else if (
@@ -6254,7 +6254,7 @@ else "Result didn't match"</dmn:text>
             <kie:width>184</kie:width>
             <kie:width>185</kie:width>
             <kie:width>226</kie:width>
-            <kie:width>980</kie:width>
+            <kie:width>984</kie:width>
             <kie:width>252</kie:width>
             <kie:width>100</kie:width>
           </kie:ComponentWidths>
