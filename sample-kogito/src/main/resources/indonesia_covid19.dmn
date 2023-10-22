@@ -4762,7 +4762,7 @@
           <dmn:text>!= "ID-SR"</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_EAE0D8BC-A061-4551-8BEE-9C9DB09A90A8">
-          <dmn:text>if (number(Total Regencies, ",", ".") &lt;= number(Total Districts, ",", ".") and number(Total Cities, ",", ".") &lt;= number(Total Districts, ",", ".")) then "Higher or equal" else "Lower"</dmn:text>
+          <dmn:text>if ((number(Total Regencies, ",", ".") + number(Total Cities, ",", ".")) &lt;= number(Total Districts, ",", ".")) then "Higher or equal" else "Lower"</dmn:text>
         </dmn:outputEntry>
         <dmn:annotationEntry>
           <dmn:text/>
@@ -6219,7 +6219,7 @@ else "Result didn't match"</dmn:text>
             <kie:width>191</kie:width>
             <kie:width>182</kie:width>
             <kie:width>165</kie:width>
-            <kie:width>597</kie:width>
+            <kie:width>607</kie:width>
             <kie:width>100</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_73732BB5-5749-4935-AEBF-E4178C5F7DE8">
