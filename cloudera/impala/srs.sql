@@ -15,7 +15,7 @@ SELECT * FROM
         CASE
             WHEN rcpmr_4_freq >= (rcpmr_registers_freq * 0.8)
               THEN 4
-            WHEN rcpmr_3_freq >= (rcpmr_registers_freq * 0.7)
+            WHEN rcpmr_3_freq > (rcpmr_registers_freq * 0.7)
               THEN 3
             WHEN rcpmr_avg >= 2
               THEN 2
@@ -56,7 +56,7 @@ JOIN (
               CASE
                   WHEN ramr_4_freq >= (ramr_registers_freq * 0.8)
                     THEN 4
-                  WHEN ramr_3_freq >= (ramr_registers_freq * 0.6)
+                  WHEN ramr_3_freq > (ramr_registers_freq * 0.6)
                     THEN 3
                   WHEN ramr_avg >= 2
                     THEN 2
@@ -89,7 +89,7 @@ JOIN (
               CASE
                   WHEN rcsmr_4_freq >= (rcsmr_registers_freq * 0.8)
                     THEN 4
-                  WHEN rcsmr_3_freq >= (rcsmr_registers_freq * 0.6)
+                  WHEN rcsmr_3_freq > (rcsmr_registers_freq * 0.6)
                     THEN 3
                   WHEN rcsmr_avg >= 2
                     THEN 2
