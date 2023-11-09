@@ -86,6 +86,8 @@ A continuación, se destacan las distintas direcciones mediante las cuales se ha
 - Swagger UI para interactuar con la API que genera Kogito: http://localhost:8080/q/swagger-ui
 - Hue para acceder a Impala y al sistema de archivos HDFS desde GUI: http://localhost:8888/
 
+Para consultar las credenciales por defecto que permiten entrar a hue, se recomienda revisar el siguiente enlace: https://docs.cloudera.com/documentation/enterprise/5-4-x/topics/quickstart_vm_administrative_information.html
+
 ## Simulación del caso de estudio
 
 Una vez desplegada la arquitectura y tras haber comprobado que se tiene acceso a los servicios comentados en la anterior sección, es posible realizar la ejecución del pipeline desarrollado.
